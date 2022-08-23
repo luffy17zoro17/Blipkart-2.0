@@ -3,12 +3,14 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import SearchBar from '../components/SearchBar';
 import Sections from '../components/Sections';
-import ImageSlideshow from '../components/ImageSlideshow';
+import ImageSlideShow from "../components/ImageSlideShow";
+import Electronics from '../components/Electronics';
 
 
 
 
-export default function Home() {
+
+const Home=()=> {
 
 
   return (
@@ -16,8 +18,12 @@ export default function Home() {
      <div><SearchBar/></div>
      <div><Sections/></div>
 
-     <div><ImageSlideshow/></div>
+     <div><ImageSlideShow/></div>
+
+     <div><Electronics/></div>
    </div>  
   );
 
 }
+
+export default Home;

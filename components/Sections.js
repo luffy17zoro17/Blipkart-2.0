@@ -4,8 +4,10 @@ import Image from 'next/image';
 
 const Sections = () => {
   return (
-    <div className="flex justify-evenly mx-[4rem]">
-      
+    
+    <div className="flex flex-wrap justify-evenly gap-4 sm:flex sm:gap-1 
+    relative z-10 border-0 shadow bg-white px-7">
+    
        <div className="flex flex-col items-center font-semibold py-4">
          <div className="w-[62px] h-[62px]">
           <Image 
@@ -127,7 +129,9 @@ const Sections = () => {
             <ExpandMoreIcon sx={{fontSize: 15}} className="mt-[0.5rem] ml-[0.2rem]"/>
          </div>    
        </div>
+     
     </div>
+    
   );
 }
 
