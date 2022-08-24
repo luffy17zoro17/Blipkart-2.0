@@ -9,7 +9,6 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 
-
 const images = [
     {
       id:1,
@@ -99,6 +98,7 @@ const images = [
 
 
 
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -111,7 +111,7 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick} = props;
+  const { className, style, onClick } = props;
   return (
    <div>
     <ArrowBackIosNewIcon
@@ -127,9 +127,10 @@ function SamplePrevArrow(props) {
 
 
 
-const Electronics = () => {
 
-  
+const GroomingBooksAuto = () => {
+
+
 
   const settings = {
     dots: true,
@@ -139,19 +140,19 @@ const Electronics = () => {
     slidesToScroll: 4,
     prevArrow: <div><SamplePrevArrow/></div>,
     nextArrow: <div><SampleNextArrow/></div>,
-
   }
 
 
 
-
   return (
-      <div className="border bg-white m-2 my-5 p-4 pb-7 relative shadow">
+      <div className="shadow border bg-white m-2 my-5 p-4 pb-7 relative">
         <div className="flex justify-between items-center">
           <div className="tag">
-              <h1 className="text-xl font-semibold">Best of Electronics</h1>
+              <h1 className="text-xl font-semibold">
+                Grooming, Books, Auto & more
+              </h1>
               <h3 className="text-gray-400 text-sm font-semibold">
-                Best of Electronics
+                Grooming, Books, Auto & more
               </h3>
           </div>
           <div className="border bg-blue-600 text-white 
@@ -180,11 +181,7 @@ const Electronics = () => {
                    <div className="text-green-700 text-sm">
                      <h1 className="">{item.priceRange}</h1>
                    </div>
-                   <div>
-                    <h1 className="text-gray-500 truncate">
-                       {item.category}
-                    </h1>
-                   </div>
+                   <div><h1 className="text-gray-500 truncate">{item.category}</h1></div>
                  </div>
                 </div> 
               </div>
@@ -198,6 +195,6 @@ const Electronics = () => {
 }
 
 
-export default Electronics;
+export default GroomingBooksAuto;
 
 

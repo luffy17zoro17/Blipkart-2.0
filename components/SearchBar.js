@@ -10,7 +10,7 @@ import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
+
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
@@ -86,8 +86,6 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       
     >
-      <MenuItem>Profile</MenuItem>
-      <MenuItem>My account</MenuItem>
     </Menu>
   );
 
@@ -110,42 +108,11 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
      
     >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
     </Menu>
   );
 
   return (
+   <div className="fixed top-0 z-50 w-[100%] mb-11"> 
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
        <div className="flex justify-center"> 
@@ -157,7 +124,10 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs:'block' } }}
           >
-            Blipkart
+            <h1 className="font-bold rounded-lg shadow-md px-3
+             shadow-green-600 italic">
+              Blipkart
+            </h1>
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -196,6 +166,7 @@ export default function PrimarySearchAppBar() {
       {renderMobileMenu}
       {renderMenu}
     </Box>
+   </div> 
   );
 }
 

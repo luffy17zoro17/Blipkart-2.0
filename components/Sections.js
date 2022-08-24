@@ -5,8 +5,8 @@ import Image from 'next/image';
 const Sections = () => {
   return (
     
-    <div className="flex flex-wrap justify-evenly gap-4 sm:flex sm:gap-1 
-    relative z-10 border-0 shadow bg-white px-7">
+    <div className="mt-[4.3%] flex flex-wrap justify-evenly gap-4 sm:flex sm:gap-1 
+    relative z-0 border-0 shadow bg-white px-7">
     
        <div className="flex flex-col items-center font-semibold py-4">
          <div className="w-[62px] h-[62px]">
