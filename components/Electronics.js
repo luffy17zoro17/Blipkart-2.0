@@ -146,6 +146,8 @@ const Electronics = () => {
 
 
   return (
+     <div className="">
+      <div>
       <div className="border bg-white m-2 my-5 p-4 pb-7 relative shadow">
         <div className="flex justify-between items-center">
           <div className="tag">
@@ -163,16 +165,18 @@ const Electronics = () => {
           <hr className="border-top w-[93.9rem] -ml-4 "/>
         </div>
         <div className="imgslider mx-[0.8]">
+          <div className="border-4relative z-10">
+           <div>
             <Slider {...settings}>
               {images.map((item) => (
               <div key={item.id} className="">
                 <div className="flex flex-col space-y-3 justify-center">
-                 <div className="hover:scale-105 flex justify-center"> 
+                 <div className="hover:scale-105 flex justify-center relative"> 
                   <Image 
                     height={150}
                     width={150}
                     src={item.imgPath} 
-                    className="object-cover"   
+                    className="object-cover" 
                   />
                  </div> 
                  <div className="space-y-2 text-center">
@@ -190,8 +194,12 @@ const Electronics = () => {
               </div>
               ))}
             </Slider>
+           </div> 
+          </div>  
         </div>
       </div>
+      </div>
+     </div> 
 
   );
  

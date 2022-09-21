@@ -67,7 +67,7 @@ const FooterBottom = () => {
           <ul>
             <li>Blipkart Internet Private Limited,</li>
             <li>dferferfwefer</li>
-            <li>wefewrferferf</li>
+            <li>created by Thomas Mathew</li>
             <li>India, 2342443</li>  
           </ul>
        </div> 
@@ -78,7 +78,7 @@ const FooterBottom = () => {
             <li>Blipkart Internet Private Limited,</li>
             <li>wefwfewferfe</li>
             <li>wefwferfedcdscfdscdcasdcsadcasdcaxaasfbrtybtrf</li>
-            <li>svsdfvdfvdf</li>
+            <li>created by Thomas Mathew</li>
             <li>India</li>
             <li>CIN:U4234243R234RFF324F43</li>
             <li>Telephone:

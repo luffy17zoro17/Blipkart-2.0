@@ -162,7 +162,7 @@ const BeautyFoodToys = () => {
           <hr className="border-top w-[93.9rem] -ml-4 "/>
         </div>
         <div className="imgslider mx-[0.8]">
-            <Slider {...settings}>
+            <Slider {...settings}> 
               {images.map((item) => (
               <div key={item.id} className="">
                 <div className="flex flex-col space-y-3 justify-center">
@@ -184,8 +184,9 @@ const BeautyFoodToys = () => {
                 </div> 
               </div>
               ))}
+            
             </Slider>
-        </div>
+        </div>    
       </div>
 
   );
