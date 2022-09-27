@@ -1,5 +1,5 @@
 
-import SearchBar from '../components/SearchBar';
+import NavBar from '../components/NavBar';
 import Sections from '../components/Sections';
 import ImageSlideShow from "../components/ImageSlideShow";
 import Electronics from '../components/Electronics';
@@ -21,18 +21,20 @@ const Home=()=> {
 
   return (
    <div>
-     <div><SearchBar/></div>
+     <div><NavBar/></div>
      <div><Sections/></div>
-
-     <div><ImageSlideShow/></div>
-
-     <div><Electronics/></div>
-     <div><BestSellers/></div>
-     <div><BeautyFoodToys/></div>
-     <div><SportsHealthcare/></div>
-     <div><HomeKitchen/></div>
-     <div><GroomingBooksAuto/></div>
-     <div><FashionTopDeals/></div>
+     <div className='mx-[0%] lg:mx-[5%]'> 
+      <div>
+        <div><ImageSlideShow/></div>
+        <div><Electronics/></div>
+        <div><BestSellers/></div>
+        <div><BeautyFoodToys/></div>
+        <div><SportsHealthcare/></div>
+        <div><HomeKitchen/></div>
+        <div><GroomingBooksAuto/></div>
+        <div><FashionTopDeals/></div>
+      </div>  
+     </div>
      <div><Footer/></div>
      <div><FooterBottom/></div>
    </div>  
