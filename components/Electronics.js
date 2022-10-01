@@ -100,7 +100,7 @@ const images = [
 
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const {style, onClick } = props;
   return (
     <ArrowForwardIosIcon
       className="shadow shadow-black text-black"
@@ -111,15 +111,15 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick} = props;
+  const {style, onClick} = props;
   return (
-   <div>
+
     <ArrowBackIosNewIcon
       className="shadow shadow-black text-black"
       style={{...style, display: "block", background: "white"}}
       onClick={onClick}
     />
-   </div> 
+   
    
   );
 }

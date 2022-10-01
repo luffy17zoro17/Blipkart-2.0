@@ -47,77 +47,97 @@ const AllAdvantages = [
 const Advantages = () => {
 
     return (
-      <div className="relative mt-[7rem]">
-      <div className="bg-white border shadow-3xl shadow-outer shadow-black">
-        <div className="flex justify-center text-center border-2 mt-[1%] w-[100%]">
-            <div className="flex justify-evenly font-medium text-2xl p-[4%]">
-              <h1 className="hidden">WHY SELL ONLINE</h1>
-              <h2 className="space-y-[1rem] pt-[2.8rem] text-center">
+      <div className="">
+      <div className="bg-white shadow-3xl shadow-black">
+        <div className="flex justify-center text-center mt-[1%] w-[100%]">
+            <div className="flex justify-evenly font-medium text-xl p-[4%] gap-11">
+              <h1 className="hidden lg:flex">WHY SELL ONLINE</h1>
+              <h2 className="space-y-[1rem] pt-[2.8rem] text-center lg:pt-[0rem]">
                 <span className="">WHY BLIPKART?</span>
-                <hr className="h-[0.3rem] bg-blue-500 border w-[14rem]"/>
+                <hr className="h-[0.3rem] bg-blue-500 border w-[12rem]"/>
               </h2>
-              <h3 className="hidden">WHY SHOPPEYY</h3>
-              <h4 className="hidden">HOW TO BE A SELLER</h4>  
+              <h3 className="hidden lg:flex">WHY SHOPPEYY?</h3>
+              <h4 className="hidden lg:flex">HOW TO BE A SELLER</h4>  
             </div>    
 
         </div>
-        <div className="flex flex-col justify-center">
-           <div className="border-2 w-[100%] text-center flex flex-col
-            items-center">
-            <h1 className="italic border font-medium text-lg mb-[5%] h-[10%]">
+        <div className="flex justify-start w-[100%] border-4 border-black relative
+         flex-col md:flex-row md:flex-wrap">
+          
+            <h1 className="italic font-medium text-lg mb-[5%] absolute">
               #ChildsPlay
             </h1>
-            <div className="relative">
-             <iframe width="426" height="240" 
-              className="rounded-tr-xl rounded-bl-xl"
+            <div className="flex border-2 border-red-600 px-[4%] py-[4%] xl:w-[32rem]">
+             <iframe width="429" height="240" 
+              className="rounded-tr-xl rounded-bl-xl w-[100%]"
               src="https://www.youtube.com/embed/6stlCkUDG_s?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_" 
-              title="Start your online business in 10 mins" frameborder="0" 
+              title="Start your online business in 10 mins" frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen="true">  
+              allowFullScreen={true}>  
              </iframe>
             </div>
-           </div> 
-           <div className="border-4">
-             <div className="flex justify-center font-medium py-5 pt-9 text-md">
+      
+
+
+           <div className="static flex justify-between border-4 flex-col space-y-[8rem]
+            md:flex-row md:w-[50%] md:flex-wrap md:space-y-[32rem] lg:w-[60%]
+            lg:space-x-[4rem] xl:space-x-[6rem]">
+
+             <div className="flex justify-center font-medium pt-9 pb-11 text-md 
+             absolute border-2 w-[100%] md:w-[49.5%] lg:w-[59.7%]">
                <h1>Advantages of Selling on Blipkart</h1>
              </div>
-             <div className="flex items-start w-[100%] py-2 relative
-              border-4 border-purple-500 h-[100%]">
-             <div className="flex border flex-wrap gap-7 h-[100%]">
+            
+      
              {AllAdvantages.map((item) => (
-               <div key={item.id}>
-                <div className="flex border h-[100%]">
-                 <div className="relative rounded-full mx-4">  
+               <div className="border-4 border-cyan-400 relative 
+                md:w-[50%] md:ml-[4%] md:top-[-22rem] 
+                  lg:w-[40%]"
+                 key={item.id}>
+
+                
+              
+                 <div className="w-[5rem] h-[5rem] rounded-full absolute left-[1rem]"> 
                  <Image 
                      src={item.imgPath}
                      alt=""
-                     height={80}
-                     width={80}
+                     height={900}
+                     width={900}
                      className="object-cover rounded-full"
-                     layout="fixed"/>
+                     layout="responsive"/>
                  </div>   
-                 <div> 
-                  <h1 className="font-medium mb-2 text-blue-400">{item.name}</h1>
-                  <h2 className="mb-[1rem]">{item.detail}</h2>
+                
+                 <div className="flex flex-col absolute top-3 left-[7rem]"> 
+                  <h1 className="font-medium text-blue-400">
+                    {item.name}
+                  </h1>
+                  <h2 className="">
+                    {item.detail}
+                  </h2>
                   <h3 className="font-light text-[0.8rem] text-blue-500 hidden">
                     Learn More
                   </h3>
                  </div> 
-                </div> 
+                 
+            
+                
+              
                </div>
              ))}
-             </div>
-             </div>
+             
+        
+            
              <div className="flex justify-center m-5">
              <div className="border px-7 py-2 bg-blue-400 flex items-center
              justify-center text-white w-[17rem] rounded hidden">
                 How to Be a Seller?
              </div>
              </div>
-           </div>
+            </div> 
+        </div>
         </div> 
        </div>    
-      </div> 
+  
 
     );
 }

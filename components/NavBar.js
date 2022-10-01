@@ -8,7 +8,8 @@ import Link from 'next/link';
 const Navbar = () => {
 
   return (
-    <div className="h-[3.7rem] w-[100%] bg-blue-500 text-white
+    <div className="h-[3.7rem] w-[100%] bg-blue-500 text-white shadow-md 
+      shadow-black
       flex items-center px-5 fixed z-10 top-0 justify-center space-x-[4rem]">
 
 

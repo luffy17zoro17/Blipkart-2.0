@@ -67,12 +67,12 @@ function SwipeableTextMobileStepper() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleStepChange = (step) => {
-    setActiveStep(step);
+  const handleStepChange = (id) => {
+    setActiveStep(id);
   };
 
   return (
-    <div className=''>
+    <div className='static bg-yellow-300 h-[17rem]'>
     <Box sx={{ width: 800, flexGrow: 1 }}>
       <Paper
         square
@@ -92,11 +92,10 @@ function SwipeableTextMobileStepper() {
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
-        className='flex flex-col justify-center items-center absolute
-         overflow-hidden w-[100%] h-[26%] border-4 mt-[2.9rem] sm:mt-[3rem]'>
+        className='flex flex-col justify-center items-center absolute z-10
+         overflow-hidden w-[100%] h-[22%] mt-[2.9rem] mb-[7rem] sm:mt-[3rem]'>
         {CarousalImages.map((pic) => (
-          <div className="flex justify-around
-           h-[17rem] pt-[4rem]" key={pic.id}>
+          <div className="flex justify-around h-[18rem] pt-[4rem]" key={pic.id}>
             {Math.abs(activeStep - pic.id) <= 2 ? (
                      
              <div className='flex w-[20rem] h-[12rem]'> 
@@ -125,12 +124,14 @@ function SwipeableTextMobileStepper() {
       </AutoPlaySwipeableViews>
       <MobileStepper
         steps={maxSteps}
-        position=""
-        className='w-screen bg-transparent h-[22%] mt-[8rem]'
+        position="static"
+        className='w-screen bg-transparent h-[22%] absolute z-10 mt-[7rem]'
         activeStep={activeStep}
         nextButton={
+        
           <Button
             size="large"
+            className='mb-[11rem]'
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
           >
@@ -140,9 +141,11 @@ function SwipeableTextMobileStepper() {
               <KeyboardArrowRight />
             )}
           </Button>
+        
         }
         backButton={
-          <Button size="large" onClick={handleBack} disabled={activeStep === 0}>
+          <Button className="mb-[11rem]" 
+          size="large" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? (
               <KeyboardArrowRight />
             ) : (

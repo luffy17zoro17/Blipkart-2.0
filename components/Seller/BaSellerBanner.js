@@ -15,7 +15,8 @@ const BaSellerBanner= () => {
     return (
         <>
             <NavBarSeller/>
-            <div className="overflow-hidden relative top-[6rem]
+            <div className="relative">
+            <div className="overflow-hidden static top-[6rem]
              p-[5%] bg-gradient-to-t from-red-500 to-purple-600 flex lg:top-[4rem]">
 
             
@@ -67,7 +68,8 @@ const BaSellerBanner= () => {
            
               <div className="absolute flex justify-center items-center bottom-10 w-[40%] 
               right-[0%] font-bold text-[1vw] hidden lg:flex">
-                   <div className="flex flex-col text-center justify-center items-center w-[16%]">
+                   <div className="flex flex-col text-center justify-center items-center 
+                    w-[16%] gap-[0.4rem]">
                     <div className="p-[14%] border-blue-600 
                     border-2 bg-white rounded-full flex flex-col justify-center 
                     items-center text-[1.6vw]">
@@ -79,7 +81,8 @@ const BaSellerBanner= () => {
                    </div>
 
 
-                   <div className="flex flex-col text-center justify-center items-center w-[16%]">
+                   <div className="flex flex-col text-center justify-center items-center 
+                   w-[16%] gap-[0.4rem]">
                    <div className="rounded-full border-2 bg-white border-blue-600 p-[14%] 
                    flex flex-col justify-center items-center">
                     <CalculateIcon fontSize="large" className="text-[2.4vw]"/>
@@ -88,7 +91,8 @@ const BaSellerBanner= () => {
                    </div>
 
 
-                   <div className="flex flex-col items-center text-center justify-center w-[16%]">
+                   <div className="flex flex-col items-center text-center justify-center 
+                   w-[16%] gap-[0.4rem]">
                    <div className="rounded-full border-2 bg-white border-blue-600 p-[14%]
                    flex flex-col justify-center items-center">
                      <LocationOnIcon fontSize="large" className="text-[2.4vw]"/> 
@@ -96,7 +100,8 @@ const BaSellerBanner= () => {
                     <h3 className="text-green-100">27000+ <br/> pincodes</h3>
                    </div>
 
-                   <div className="flex flex-col items-center text-center justify-center w-[16%]">
+                   <div className="flex flex-col items-center text-center justify-center 
+                   w-[16%] gap-[0.4rem]">
                    <div className="flex flex-col items-center justify-center
                    rounded-full bg-white border-2 border-blue-600 p-[14%]">
                       <GroupsIcon fontSize="large" className="text-[2.4vw]"/>
@@ -105,7 +110,8 @@ const BaSellerBanner= () => {
                    </div>
 
 
-                   <div className="flex flex-col items-center text-center justify-center w-[16%]">
+                   <div className="flex flex-col items-center text-center justify-center 
+                   w-[16%] gap-[0.4rem]">
                    <div className="flex flex-col items-center justify-center
                    rounded-full border-2 bg-white border-blue-600 p-[14%]">
                       <BusinessCenterIcon fontSize="large" className="text-[2.4vw]"/>
@@ -113,6 +119,7 @@ const BaSellerBanner= () => {
                      <h5 className="text-green-100">Account <br/>management</h5>
                    </div>     
               </div>  
+            </div>
             </div>
             
         </>
