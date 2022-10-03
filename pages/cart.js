@@ -39,7 +39,7 @@ const Cart = () => {
                     Login to see the items you added previously
                  </p>
                  <div className="font-light px-[5rem] py-[0.5rem]
-                   bg-orange-300 rounded text-red-800 shadow-xl">
+                   bg-orange-300 rounded text-red-800 shadow-xl cursor-pointer">
                   <Link href="/login">
                     <a className="">Login</a>
                   </Link>

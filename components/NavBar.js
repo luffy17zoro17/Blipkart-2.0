@@ -2,10 +2,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Link from 'next/link';
+import NavbarDropdown from './Dropdowns/NavbarLogin';
+import { useState } from 'react';
 
 
 
 const Navbar = () => {
+
+  const [isHover, setIsHover] = useState(false);
+  const [isMore, setIsMore] = useState(false);
 
   return (
     <div className="h-[3.7rem] w-[100%] bg-blue-500 text-white shadow-md 
@@ -34,11 +39,21 @@ const Navbar = () => {
     
       </span>
 
-    
-      <span className="bg-white text-violet-700 w-[9rem] h-[2.2rem]
+      
+      <div onMouseLeave={()=>{setIsHover(false)}} onMouseOver={()=>{setIsHover(true)}} 
+      className="bg-white text-violet-700 w-[9rem] h-[2.2rem] 
        rounded-sm font-semibold flex justify-center items-center">
-        Login
-      </span>
+        <span className='cursor-pointer'>Login</span>
+    
+
+      {isHover ? (
+         <div className='px-[3rem] py-[2rem] font-medium
+         absolute bg-orange-400 top-[3rem] shadow-md shadow-black
+         rounded-lg z-40'><NavbarDropdown/></div>
+      ) : (<ul></ul>)}
+      </div>
+  
+      
       <span className='hidden xl:flex'>
         <Link
          href="/becomeaseller"
@@ -49,7 +64,20 @@ const Navbar = () => {
         </Link>
       </span>
       <span className='hidden lg:flex'>
-        More <KeyboardArrowDownIcon fontSize="small"/></span>
+      <div onMouseLeave={()=>{setIsMore(false)}} onMouseOver={()=>{setIsMore(true)}} 
+      className="text-violet-700 w-[9rem] h-[2.2rem] 
+       rounded-sm font-medium flex justify-center items-center">
+      <span className='cursor-pointer text-white'>More 
+      <KeyboardArrowDownIcon className={isMore && "rotate-180"} fontSize="small"/></span>
+    
+
+      {isMore ? (
+         <div className='px-[3rem] py-[2rem] font-medium
+         absolute bg-orange-400 top-[3rem] shadow-md shadow-black
+         rounded-lg z-20'><NavbarDropdown/></div>
+      ) : (<ul></ul>)}
+      </div>
+      </span>
       <span className='hidden md:flex'>
         <Link href="/cart"><a><ShoppingCartIcon/> Cart</a></Link></span>
       

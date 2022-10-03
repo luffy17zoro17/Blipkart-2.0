@@ -92,33 +92,20 @@ const ImageSlideShow=()=> {
               </Paper>
             </div>
 
-                     
-            <div className="flex flex-col justify-center
-              items-center">
-             <div className="absolute bottom-0 z-20">
-              <MobileStepper
-                  steps={maxSteps}
-                  position="static"
-                  activeStep={activeStep}
-              />
-             </div> 
-            </div>
-
-            <div className="flex justify-center flex-col 
-             items-center">
-              <div className="absolute border-4 w-[90%]
-                top-[40%]">
+           
+            <div className="absolute w-[100%] flex justify-center bottom-0">
               <MobileStepper
                         steps={maxSteps}
                         position="static"
-                        display="block"
+                        className='bg-yellow-300 rounded-t-xl border-4 border-black bottom-0'
                         activeStep={activeStep}
                         nextButton={  
                             
-                      <div className="z-30 rounded-tr-lg
-                      rounded-br-lg bg-pink-500 border-4 border-black
-                      bg-gradient-to-b from-yellow-300">    
-                        <Button className="" size="large" onClick={handleNext}> 
+                      <div className="">    
+                        <Button className="absolute right-[7%] bottom-[9rem]
+                        rounded-tr-lg hover:bg-pink-300
+                        rounded-br-lg bg-pink-500 border-4
+                        bg-gradient-to-b from-yellow-300" size="large" onClick={handleNext}> 
                             {theme.direction === 'rtl' ? (
                             <KeyboardArrowLeft />
                             ) : (
@@ -130,10 +117,11 @@ const ImageSlideShow=()=> {
                         }
                         backButton={ 
                       
-                      <div className="z-30 rounded-tl-lg
-                        rounded-bl-lg bg-pink-500 border-4 border-black
-                        bg-gradient-to-b from-yellow-300">    
-                        <Button className="" size="large" onClick={handleBack}>
+                      <div className="">    
+                        <Button className="absolute left-[7%] bottom-[9rem]
+                        rounded-tl-lg hover:bg-pink-300
+                        rounded-bl-lg bg-pink-500 border-4 
+                        bg-gradient-to-b from-yellow-300" size="large" onClick={handleBack}>
                             {theme.direction === 'rtl' ? (
                             <KeyboardArrowRight />
                             ) : (
@@ -144,10 +132,10 @@ const ImageSlideShow=()=> {
                       </div>                   
                         }
               />
-              </div>
             </div>
+          
 
-            <div className="relative">
+            <div className="relative z-[-20]">
             <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
@@ -158,8 +146,8 @@ const ImageSlideShow=()=> {
                 <div key={step.label}>
                     {Math.abs(activeStep - index) <= 2 ? ( 
                        
-                        <div className="relative 
-                        w-[100%] h-[20rem]">
+                        <div className="relative
+                        h-[20rem]">
                         <Image
                            
                             display="block"

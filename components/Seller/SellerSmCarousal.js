@@ -16,35 +16,24 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 const CarousalImages = [
   {
     id:1,
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    label: 'Luffy, Foosha Village.',
     imgPath:"https://w0.peakpx.com/wallpaper/961/254/HD-wallpaper-luffy-anime-monkey-d-luffy-one-piece-strawhats-wano-arc-thumbnail.jpg",
     quote: `"Sales compounded the consumer demand which led to a milestone of 150% YoY revenue growth from Blipkart."`,
     name:"Monkey.D.Luffy",
   },
   { 
     id:2,
-    label: 'Bird',
+    label: 'Zoro, Shimotsuki Village.',
     imgPath:"https://w0.peakpx.com/wallpaper/399/672/HD-wallpaper-one-piece-zoro-anime-one-piece-zoro.jpg",
     quote:`"Blipkart helped me expand to 6 categories with 5x growth YoY!"`,
     name:"Roronoa Zoro"
   },
   {
     id:3,
-    label: 'Bali, Indonesia',
+    label: 'Nami, Cocoyasi Village.',
     imgPath:"https://w0.peakpx.com/wallpaper/155/429/HD-wallpaper-nami-anime-manga-one-piece-thumbnail.jpg",
     quote:`"With Blipkart, we went from Rs.10,000 to Rs.5 Cr in sales per annum!"`,
     name:"Nami",
@@ -72,7 +61,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <div className='static bg-yellow-300 h-[17rem]'>
+    <div className='static bg-yellow-300 h-[17rem] mt-[6rem]'>
     <Box sx={{ width: 800, flexGrow: 1 }}>
       <Paper
         square
@@ -125,7 +114,7 @@ function SwipeableTextMobileStepper() {
       <MobileStepper
         steps={maxSteps}
         position="static"
-        className='w-screen bg-transparent h-[22%] absolute z-10 mt-[7rem]'
+        className='w-[100%] bg-transparent h-[22%] absolute z-10 mt-[7rem]'
         activeStep={activeStep}
         nextButton={
         

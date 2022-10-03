@@ -31,7 +31,8 @@ const reviews= [
         <> 
             <div className="flex md:hidden"><SwipeableTextMobileStepper/></div>
                
-            <div className="flex-col justify-center items-center py-[5%] bg-gray-100
+            <div className="flex-col relative justify-center items-center
+              top-[8rem] py-[5%] bg-gray-100
               w-[100%] h-[21%] hidden md:flex md:top-[6.03rem]
               lg:py-[4%] lg:top-[4rem] xl:py-[3%] xl:top-[4rem] xl:h-[0%]">
             <div className="static flex justify-evenly w-[100%] flex-wrap md:gap-[3rem]">

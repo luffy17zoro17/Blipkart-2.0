@@ -44,12 +44,13 @@ const BrandNewMarket = () => {
     return (
     
            <div className="relative bg-white lg:hidden">
-             <div className="flex justify-center font-medium py-3 pb-11 
-             text-md">
-               <h1>Brand New Marketplace By Blipkart</h1>
+             <div className="flex flex-col font-medium bg-white
+             text-md absolute left-[7.5rem] mt-[0rem]
+             sm:left-[15rem]">
+                Brand New Marketplace By Blipkart
              </div>
       
-             <div className="flex flex-col justify-evenly gap-[2rem]">
+             <div className="flex flex-col justify-evenly gap-[2rem] pt-[4rem]">
              {Marketplace.map((item) => (
                <div key={item.id}>
                 <div className="flex pl-5">

@@ -60,7 +60,7 @@ const HowToSell = () => {
             </h1>
             <div className="w-[100%] h-[100%] px-[3%] py-[2%]">
              <iframe width="426" height="240" 
-              className="rounded-tl-xl rounded-br-xl w-[100%]"
+              className="rounded-tl-xl rounded-br-xl w-[100%] shadow-md shadow-black"
               src="https://www.youtube.com/embed/ZuqtluIIgWU?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_"
               title="Beautiful Cabin/Cottage" frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -70,8 +70,8 @@ const HowToSell = () => {
            </div> 
            <div className="">
              <div className="flex flex-col text-center justify-center
-                pt-9 pb-11 text-md gap-5 px-[6%]">
-               <p>You need just 3 things to become a Blipkart Seller, your
+                pt-9 pb-33 text-md gap-5 px-[6%] static w-[100%] h-[20rem]">
+               <p className="">You need just 3 things to become a Blipkart Seller, your
                  basic details & GSTIN, Pick-up address, and 1 unique product to
                  sell. Yes! this is all you require to register as a seller on Blipkart.
                </p>
@@ -115,33 +115,9 @@ const HowToSell = () => {
         </div> 
        </div>   
 
-       <div className="xl:flex xl:w-[100%] xl:justify-center xl:items-center xl:gap-8">
-       <div className="flex flex-col items-center text-center justify-center gap-2
-        py-4 lg:flex-row xl:gap-8">
-        <div>
-        <h1 className="font-bold text-3xl pb-2 text-violet-700">S|-|</h1>
-        <h2 className="text-xl font-semibold text-violet-700">SHOPPEYY</h2>
-        <h3 className="text-xs italic">by Blipkart</h3>
-        </div>
-        <div className="md:flex md:items-center lg:flex-col">
-          <div className="py-5 w-[22rem] text-start flex justify-center">
-             Avail 0% Commission for Selling on <br className="flex sm:hidden"/> SHOPPEYY!
-          </div>
-      
-          <div className="text-violet-700 font-medium lg:hidden">KNOW MORE</div>
-        </div>   
-       </div>
-
-       <div>
-         <div className="text-violet-700 font-medium text-center justify-center 
-         hidden lg:flex lg:py-6">
-             KNOW MORE
-         </div>     
-       </div>
-       </div>
+       
       </div> 
       
-  
     );
 }
 

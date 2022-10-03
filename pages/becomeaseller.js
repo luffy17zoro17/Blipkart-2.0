@@ -10,6 +10,7 @@ import GrowFaster from "../components/Seller/GrowFaster";
 import EventsAndProgs from "../components/Seller/EventsAndPrograms";
 import FooterSeller from "../components/Seller/FooterSeller";
 import FooterSellerBottom from "../components/Seller/FooterSellerBottom";
+import ZeroCommission from "../components/Seller/ZeroCommission";
 
 
 
@@ -25,6 +26,7 @@ const BecomeAseller= () => {
             <WhyShopsy/>
             <BrandNewMarket/>
             <HowToSell/>
+            <ZeroCommission/>
             <GrowFaster/>
             <EventsAndProgs/>
             <FooterSeller/>
