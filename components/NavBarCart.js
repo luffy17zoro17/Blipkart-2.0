@@ -13,7 +13,7 @@ const NavBarCart = () => {
       sm:justify-center
       space-x-[2rem]">
 
-     <div className='flex items-center border w-[80%] sm:w-[55%]'>
+     <div className='flex items-center w-[80%] sm:w-[55%]'>
       <span className="font-semibold text-xl mr-5
        text-yellow-200 italic border px-3 rounded-br-lg
        rounded-tl-lg border-pink-300">
@@ -22,7 +22,7 @@ const NavBarCart = () => {
 
 
      
-      <span className='border w-[65%] sm:w-[55%]'>
+      <span className='w-[65%] sm:w-[55%]'>
       <input 
         className="h-[2.3rem] text-black pl-3 pr-[22%] w-[100%]
          rounded-br-md rounded-tl-md truncate outline-none"
@@ -37,7 +37,8 @@ const NavBarCart = () => {
      </div>
     
       <span className="bg-white text-violet-700 w-[9rem] h-[2.2rem]
-       rounded-sm font-semibold flex justify-center items-center">
+       rounded-sm font-semibold flex justify-center items-center
+       cursor-pointer">
         Login
       </span>
      </div>

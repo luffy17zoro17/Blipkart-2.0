@@ -15,25 +15,23 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1572584642822-6f8de0243c93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    label: 'BLACK FRIDAY SALE!',
+    imgPath:'https://images.pexels.com/photos/5632386/pexels-photo-5632386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  },  
+  {
+    label: 'Limited time offer',
+    imgPath:"https://images.unsplash.com/photo-1611403570720-162d8829689a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
   },
   {
-    label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1542992015-4a0b729b1385?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80',
-  },
+    label: '50% OFF',
+    imgPath:"https://images.unsplash.com/photo-1561069934-eee225952461?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+  },  
+
   {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://cdn.pixabay.com/photo/2020/11/18/20/18/black-friday-5756633_960_720.png',
-  },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://cdn.pixabay.com/photo/2019/11/27/17/41/black-friday-4657478_960_720.jpg',
-  },
+    label: 'CYBER MONDAY SALE!',
+    imgPath:"https://images.pexels.com/photos/5632369/pexels-photo-5632369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  }  
+ 
 ];
 
 
@@ -65,15 +63,13 @@ const ImageSlideShow=()=> {
   };
 
   return (
-    <Box>
-    <div className="relative">
+    <Box className='mx-[1%] mt-[4.9rem] relative xl:mx-[5.6%]'>
+    <div className="">
       
-      <div className="relative border-0
-           border-red-600 mx-2 my-4">
-
-
-          
-            <div className="absolute z-10 top-0">
+      <div className="
+           mx-2 my-4">    
+            <div className="z-10 top-0 absolute shadow-md
+             shadow-black">
               <Paper
                     square
                     elevation={0}
@@ -93,7 +89,7 @@ const ImageSlideShow=()=> {
             </div>
 
            
-            <div className="absolute w-[100%] flex justify-center bottom-0">
+            <div className="w-[100%] flex justify-center bottom-0 absolute z-10">
               <MobileStepper
                         steps={maxSteps}
                         position="static"
@@ -102,8 +98,9 @@ const ImageSlideShow=()=> {
                         nextButton={  
                             
                       <div className="">    
-                        <Button className="absolute right-[7%] bottom-[9rem]
-                        rounded-tr-lg hover:bg-pink-300
+                        <Button className="absolute right-[7%] mt-[-9rem] 
+                        shadow-md shadow-black
+                        rounded-tr-lg hover:bg-pink-300 hover:text-green-300
                         rounded-br-lg bg-pink-500 border-4
                         bg-gradient-to-b from-yellow-300" size="large" onClick={handleNext}> 
                             {theme.direction === 'rtl' ? (
@@ -118,8 +115,9 @@ const ImageSlideShow=()=> {
                         backButton={ 
                       
                       <div className="">    
-                        <Button className="absolute left-[7%] bottom-[9rem]
-                        rounded-tl-lg hover:bg-pink-300
+                        <Button className="absolute left-[7%] mt-[-9rem]
+                        shadow-md shadow-black
+                        rounded-tl-lg hover:bg-pink-300 hover:text-green-300
                         rounded-bl-lg bg-pink-500 border-4 
                         bg-gradient-to-b from-yellow-300" size="large" onClick={handleBack}>
                             {theme.direction === 'rtl' ? (
@@ -135,7 +133,7 @@ const ImageSlideShow=()=> {
             </div>
           
 
-            <div className="relative z-[-20]">
+            <div className="z-[-20]">
             <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
@@ -146,13 +144,11 @@ const ImageSlideShow=()=> {
                 <div key={step.label}>
                     {Math.abs(activeStep - index) <= 2 ? ( 
                        
-                        <div className="relative
-                        h-[20rem]">
+                        <div className="relative 
+                        h-[19rem]">
                         <Image
-                           
-                            display="block"
-                            layout="fill"
-                            className='object-cover'
+                           layout="fill"
+                            className='object-cover'               
                             component="Image"
                             src={step.imgPath}
                             alt={step.label}

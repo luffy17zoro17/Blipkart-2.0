@@ -54,7 +54,7 @@ const Cart = () => {
               />
            </div>
            <div className="flex justify-between w-[100%] absolute top-[45rem] 
-             text-purple-900 text-sm px-[6%]">
+             text-gray-600 text-sm px-[6%]">
               <p className="text-left flex flex-wrap justify-start
                 tracking-wide">
                 Policies: Returns Policy | Terms of use |

@@ -8,151 +8,137 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
+// 
 
 const images = [
     {
       id:1,
-      product: '12th Gen Laptops',
-      imgPath:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
-      priceRange:"From ₹47,900",
-      category: 'High Performance Laptop',
+      product: 'Lehenga Choli',
+      imgPath:"https://images.unsplash.com/photo-1503160865267-af4660ce7bf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      priceRange:"From ₹10,900",
+      category: 'Ensemebleey, Vastrolexuz',
     },
     { 
       id:2,
-      product: 'Premium Laptops',
-      imgPath:'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-      priceRange:'From ₹45,990',
-      category: 'ewferf',
+      product: 'Silk Sarees',
+      imgPath:'https://images.unsplash.com/photo-1616586169180-2671c5e1cbdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1982&q=80',
+      priceRange:'From ₹13,990',
+      category: 'Katakuriee, Nalley & more',
     },
     { 
       id:3,
-      product: 'Core i5 Laptops',
-      imgPath:'https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-      priceRange:'From ₹39,990',
-      category:'HP,Asus,Dell & More'
+      product: 'Bags',
+      imgPath:'https://images.unsplash.com/photo-1591561954555-607968c989ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2096&q=80',
+      priceRange:'From ₹14000',
+      category:'GANCIINOO'
     },
     { 
       id:4,
-      product: 'ASUS Monitors',
-      imgPath:'https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80',
-      priceRange: 'From ₹14999',
+      product: `Men's Formals`,
+      imgPath:'https://images.unsplash.com/photo-1621335829175-95f437384d7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+      priceRange: 'From ₹6099',
       category:'Top Rated',
     },
     {
       id:5,
-      product: 'Printers',
-      imgPath:'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9uaXRvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60',
-      priceRange:'From ₹10999',
-      category: 'Epson'
+      product: `Women's Trendy`,
+      imgPath:'https://images.unsplash.com/photo-1600717535275-0b18ede2f7fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80',
+      priceRange:'From ₹4999',
+      category: 'Alleen Soll, Levo & more'
     },
     { 
       id:6,
-      product: 'Best of Hair Dryers',
-      imgPath:'https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80',
-      priceRange:'From ₹399',
-      category:'Phillips, Nova & Havells'
+      product: `Men's Jeans`,
+      imgPath:'https://images.unsplash.com/photo-1547597466-50406ff4f363?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+      priceRange:'From ₹3099',
+      category:'PEPOII Jeanz, Lii'
     },
     { 
       id:7,
-      product: 'Top Mirrorless Cameras',
-      imgPath:'https://images.unsplash.com/photo-1542128047-9b51cb9b931d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhbWVyYSUyMGFjY2Vzc29yaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60',
+      product: 'Smart Watches',
+      imgPath:'https://images.unsplash.com/photo-1549482199-bc1ca6f58502?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80',
       priceRange:'Shop Now',
-      category:'Canon, Sony, Fujifilm'
+      category:'Botiee, Fozzlee'
     },
     { 
       id:8,
-      product: 'Goč, Serbia',
-      imgPath:'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80',
-      priceRange:'From ₹990',
-      category:'dfvdf'
-    },
-    {
-      id:9,
-      product: 'San Francisco – Oakland Bay Bridge, United States',
-      imgPath:'https://images.unsplash.com/photo-1625772452888-ca36edeaf3a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      priceRange:'From ₹4535',
-      category:'wddee'
-    },
-    { 
-      id:10,
-      product: 'Bird',
-      imgPath:'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBvd2VyYmFua3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-      priceRange:'From ₹23,000',
-      category:'sda'
-    },
-    { 
-      id:11,
-      product: 'Bali, Indonesia',
-      imgPath:'https://images.unsplash.com/photo-1620331317312-74b88bf40907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
-      priceRange:'From ₹18,000',
-      category:'dawde'
-    },
-    { 
-      id:12,
-      product: 'Goč, Serbia',
-      imgPath:'https://images.unsplash.com/photo-1508380702597-707c1b00695c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
+      product: 'Sunglasses',
+      imgPath:'https://images.unsplash.com/photo-1564867739458-f42235fab442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
       priceRange:'From ₹2000',
-      category:'dcdcef'
+      category:'Rey Bon, Burrbay'
     },
+    
 ];
 
 
 
-
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const {style, onClick } = props;
   return (
-    <ArrowForwardIosIcon
-      className="shadow shadow-black text-black"
-      style={{ ...style, display: "block", background: "white" }}
+   
+    <div className='flex w-[103%] h-[1rem] justify-end'>
+     <div className='sticky right-[4rem]'>
+     <ArrowForwardIosIcon
+      className="shadow-md shadow-black text-black absolute z-40
+      right-[-3.9rem] top-[-17rem]
+       border-4 border-violet-500 flex w-[100%]
+       rounded-r-xl w-[3rem] h-[5rem] cursor-pointer hover:text-orange-400"
+      style={{ ...style,background: "white" }}
       onClick={onClick}
-    />
+     />
+     </div>   
+    </div>
+   
+  
+ 
   );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const {style, onClick} = props;
   return (
-   <div>
+    
     <ArrowBackIosNewIcon
-      className="shadow shadow-black text-black"
+      className="shadow-md shadow-black text-black absolute 
+        z-10 top-[5rem] border-4 border-violet-500
+       rounded-l-xl w-[3rem] h-[5rem] cursor-pointer hover:text-orange-400"
       style={{...style, display: "block", background: "white"}}
       onClick={onClick}
     />
-   </div> 
-   
   );
 }
 
 
 
 
+const Electronics = () => {
 
-const FashionTopDeals = () => {
-
-
+  
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 8,
-    slidesToScroll: 4,
-    prevArrow: <div><SamplePrevArrow/></div>,
-    nextArrow: <div><SampleNextArrow/></div>,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    prevArrow: <SamplePrevArrow/>,
+    nextArrow: <SampleNextArrow/>,
+
+
   }
 
 
 
+
   return (
-      <div className="shadow border bg-white m-2 my-5 p-4 pb-7 relative">
+      <div className="border shadow bg-white my-5 p-4
+      overflow-hidden mx-[1.7%]
+      xl:mx-[5.9%]">
         <div className="flex justify-between items-center">
           <div className="tag">
-              <h1 className="text-xl font-semibold">
-                  Fashion Top Deals
-              </h1>
+              <h1 className="text-xl font-semibold">Fashion Top Deals</h1>
               <h3 className="text-gray-400 text-sm font-semibold">
-                 Fashion Top Deals
+                Fashion Top Deals
               </h3>
           </div>
           <div className="border bg-blue-600 text-white 
@@ -161,40 +147,58 @@ const FashionTopDeals = () => {
           </div>
         </div>  
         <div className="py-4 mb-8">
-          <hr className="border-top w-[93.9rem] -ml-4 "/>
+          <hr className="border-top w-[93.9rem] -ml-4"/>
         </div>
-        <div className="imgslider mx-[0.8]">
-            <Slider {...settings}>
+        <div className='relative w-[100%] flex justify-end'>
+        <div className="h-[24rem] right-[-1.3rem] mt-[-3rem] w-[1.3rem]
+         absolute z-10
+        bg-white"/>
+        </div>
+        
+           
+            <Slider {...settings} className="flex-none w-[102rem] mb-[2rem]">
+
               {images.map((item) => (
-              <div key={item.id} className="">
-                <div className="flex flex-col space-y-3 justify-center">
-                 <div className="hover:scale-105 flex justify-center"> 
+              <div key={item.id} className="h-[22rem]">
+               
+                <div className='
+                   text-center w-[21rem] flex flex-col items-center'>
+                 <div className='h-[15rem] w-[15rem] shadow shadow-black bg-yellow-400'>
                   <Image 
-                    height={150}
-                    width={150}
+                    height={900}
+                    width={900}
                     src={item.imgPath} 
-                    className="object-cover"   
+                    className="object-cover cursor-pointer
+                    hover:object-contain hover:shadow hover:shadow-black"   
+                    layout='responsive'        
                   />
                  </div> 
-                 <div className="space-y-2 text-center">
-                   <div><h1 className="font-semibold truncate">{item.product}</h1></div>
-                   <div className="text-green-700 text-sm">
-                     <h1 className="">{item.priceRange}</h1>
-                   </div>
-                   <div><h1 className="text-gray-500 truncate">{item.category}</h1></div>
+              
+                 <div className='w-[15rem] py-3 space-y-2'>
+                     <h1 className='font-semibold'>{item.product}</h1>
+              
+                     <h2 className='text-sm text-green-700'>{item.priceRange}</h2>
+                   
+                     <h3 className='text-gray-500'>{item.category}</h3>
                  </div>
                 </div> 
-              </div>
+            
+              </div>    
+                
               ))}
+            
             </Slider>
-        </div>
+    
       </div>
+    
+      
+ 
 
   );
  
 }
 
 
-export default FashionTopDeals;
+export default Electronics;
 
 

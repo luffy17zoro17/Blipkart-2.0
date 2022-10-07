@@ -2,8 +2,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Link from 'next/link';
-import NavbarDropdown from './Dropdowns/NavbarLogin';
+import NavbarLogin from './Dropdowns/NavbarLogin';
+
 import { useState } from 'react';
+import NavbarMore from './Dropdowns/NavbarMore';
 
 
 
@@ -14,8 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="h-[3.7rem] w-[100%] bg-blue-500 text-white shadow-md 
-      shadow-black
-      flex items-center px-5 fixed z-10 top-0 justify-center space-x-[4rem]">
+      shadow-black flex items-center px-5 fixed z-50 top-0 justify-center space-x-[4rem]">
 
 
       <span className="font-semibold text-xl 
@@ -41,15 +42,20 @@ const Navbar = () => {
 
       
       <div onMouseLeave={()=>{setIsHover(false)}} onMouseOver={()=>{setIsHover(true)}} 
-      className="bg-white text-violet-700 w-[9rem] h-[2.2rem] 
-       rounded-sm font-semibold flex justify-center items-center">
-        <span className='cursor-pointer'>Login</span>
+      className="bg-white w-[9rem] h-[2.2rem]
+       rounded-sm font-semibold flex justify-center items-center md:relative">
+        <span className='cursor-pointer text-black'>Login</span>
     
 
       {isHover ? (
+        <div className='flex fixed top-[2.2rem] right-1 md:absolute 
+        md:w-[20rem] md:right-[-6rem]'>
          <div className='px-[3rem] py-[2rem] font-medium
-         absolute bg-orange-400 top-[3rem] shadow-md shadow-black
-         rounded-lg z-40'><NavbarDropdown/></div>
+         bg-black shadow-lg shadow-black border-4 border-green-400
+         rounded-lg text-orange-200'>
+          <NavbarLogin/>
+         </div>
+        </div> 
       ) : (<ul></ul>)}
       </div>
   
@@ -63,21 +69,27 @@ const Navbar = () => {
          <a>Become a Seller</a>
         </Link>
       </span>
-      <span className='hidden lg:flex'>
+    
       <div onMouseLeave={()=>{setIsMore(false)}} onMouseOver={()=>{setIsMore(true)}} 
-      className="text-violet-700 w-[9rem] h-[2.2rem] 
-       rounded-sm font-medium flex justify-center items-center">
+      className="w-[9rem] h-[2.2rem] 
+       rounded-sm flex justify-center items-center hidden md:relative lg:flex">
       <span className='cursor-pointer text-white'>More 
       <KeyboardArrowDownIcon className={isMore && "rotate-180"} fontSize="small"/></span>
-    
-
+      
+      
       {isMore ? (
-         <div className='px-[3rem] py-[2rem] font-medium
-         absolute bg-orange-400 top-[3rem] shadow-md shadow-black
-         rounded-lg z-20'><NavbarDropdown/></div>
+         
+         <div className='px-[3rem] py-[2rem] font-medium absolute w-[20rem]
+         bg-black shadow-lg shadow-black top-[2.2rem] text-orange-200
+         rounded-lg border-4 border-green-400'>
+            <NavbarMore/>
+         </div>
+      
       ) : (<ul></ul>)}
       </div>
-      </span>
+      
+      
+    
       <span className='hidden md:flex'>
         <Link href="/cart"><a><ShoppingCartIcon/> Cart</a></Link></span>
       

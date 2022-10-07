@@ -6,7 +6,7 @@ const BestSellers = () => {
 
   return (
 
-    <div className="flex">
+    <div className="flex ml-[1%] xl:ml-[6%]">
      <div className="border bg-white p-1 shadow ml-6">
       <div className="">
          <Image

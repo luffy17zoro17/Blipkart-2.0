@@ -4,7 +4,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['images.unsplash.com','cdn.pixabay.com',
-    'static-assets-web.flixcart.com',"w0.peakpx.com"],
+    'static-assets-web.flixcart.com',"w0.peakpx.com",
+    "images.pexels.com"],
   }
 
 }
