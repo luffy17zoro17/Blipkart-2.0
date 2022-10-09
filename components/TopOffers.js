@@ -118,8 +118,8 @@ const TopOffers = () => {
 
 
   return (
-      <div className="flex items-end border-4
-      border shadow bg-white p-4
+      <div className="flex items-end
+      shadow bg-white p-4
       overflow-hidden mx-[1.7%]
       xl:mx-[5.9%]">
         <div className="flex-none w-[11rem] sm:w-[15rem] 

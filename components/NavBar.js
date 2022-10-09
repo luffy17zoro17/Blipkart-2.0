@@ -6,6 +6,11 @@ import NavbarLogin from './Dropdowns/NavbarLogin';
 
 import { useState } from 'react';
 import NavbarMore from './Dropdowns/NavbarMore';
+import LoginButtonMain from './LoginButtonMain/LoginButtonMain';
+import SignupButtonMain from './LoginButtonMain/SignupButtonMain';
+import SignupButton from './SignupButton';
+
+
 
 
 
@@ -13,13 +18,17 @@ const Navbar = () => {
 
   const [isHover, setIsHover] = useState(false);
   const [isMore, setIsMore] = useState(false);
+  const [isLoginPanel, setIsLoginPanel] = useState(false);
+
+  const [IsSignupPanel,setIsSignupPanel] = useState(false);
+
 
   return (
-    <div className="h-[3.7rem] w-[100%] bg-blue-500 text-white shadow-md 
-      shadow-black flex items-center px-5 fixed z-50 top-0 justify-center space-x-[4rem]">
+    <div className="h-[3.7rem] bg-blue-500 text-white shadow-md w-[100%]
+      shadow-black flex items-center px-5 fixed z-50 top-0 justify-center space-x-[2rem]">
 
 
-      <span className="font-semibold text-xl 
+      <span className="font-semibold text-xl
        text-yellow-200 italic border px-2 rounded-br-lg
        rounded-tl-lg border-pink-300">
          <Link href="/"><a>Blipkart</a></Link>
@@ -41,22 +50,60 @@ const Navbar = () => {
       </span>
 
       
-      <div onMouseLeave={()=>{setIsHover(false)}} onMouseOver={()=>{setIsHover(true)}} 
-      className="bg-white w-[9rem] h-[2.2rem]
-       rounded-sm font-semibold flex justify-center items-center md:relative">
-        <span className='cursor-pointer text-black'>Login</span>
-    
+      <div className="">
 
+      <div onMouseLeave={()=>{setIsHover(false)}} onMouseOver={()=>{setIsHover(true)}}
+       className="flex justify-center md:relative">
+      <div onClick={()=>setIsLoginPanel(true)} 
+      className="bg-white w-[5rem] h-[2.3rem] cursor-pointer text-black
+       rounded-sm font-semibold flex justify-center items-center 
+       md:relative md:w-[9rem]">
+         Login
+      </div>
+    
+      
       {isHover ? (
-        <div className='flex fixed top-[2.2rem] right-1 md:absolute 
-        md:w-[20rem] md:right-[-6rem]'>
-         <div className='px-[3rem] py-[2rem] font-medium
+         <div>
+         <div className='px-[3rem] py-[2rem] font-medium w-[21rem]
          bg-black shadow-lg shadow-black border-4 border-green-400
-         rounded-lg text-orange-200'>
+         rounded-lg text-orange-200 top-[2.3rem] right-0 absolute md:right-[-6rem]'>
           <NavbarLogin/>
          </div>
-        </div> 
-      ) : (<ul></ul>)}
+        
+         <div onMouseDown={()=>setIsSignupPanel(true)}
+          className='absolute z-40 w-[50%] h-[80%]
+          flex top-[2.3rem] right-[-0.2rem] md:w-[80%] md:right-[-6.3rem]'>
+           <SignupButton/>
+         </div> 
+
+          </div>
+        
+      ) : (      
+       <div></div>
+      )}
+      </div>
+
+      {isLoginPanel ? (
+    
+        <div>
+          <LoginButtonMain
+           setIsLoginPanel={setIsLoginPanel}
+          />
+        </div>
+                   
+      ) : (<div></div>)}
+      
+
+      {IsSignupPanel ? (
+            <div>
+              <SignupButtonMain
+                setIsSignupPanel={setIsSignupPanel}
+              />
+            </div>
+      ) : (<div></div>)}
+
+   
+      
       </div>
   
       
@@ -71,9 +118,9 @@ const Navbar = () => {
       </span>
     
       <div onMouseLeave={()=>{setIsMore(false)}} onMouseOver={()=>{setIsMore(true)}} 
-      className="w-[9rem] h-[2.2rem] 
+      className="w-[9rem] h-[2.2rem] cursor-pointer text-white z-[-10]
        rounded-sm flex justify-center items-center hidden md:relative lg:flex">
-      <span className='cursor-pointer text-white'>More 
+      <span className=''>More 
       <KeyboardArrowDownIcon className={isMore && "rotate-180"} fontSize="small"/></span>
       
       

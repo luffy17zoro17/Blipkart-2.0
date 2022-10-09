@@ -44,7 +44,7 @@ const images = [
       product: 'Body Lotions & more',
       imgPath:'https://images.unsplash.com/photo-1631730486572-226d1f595b68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1975&q=80',
       priceRange:'From ₹10999',
-      category: 'Applebyte Imaac'
+      category: 'Parashooten, Niveal',
     },
     { 
       id:6,
@@ -55,7 +55,7 @@ const images = [
     },
     { 
       id:7,
-      product: 'Hair Straightner',
+      product: 'Hair Straightener',
       imgPath:'https://images.pexels.com/photos/3738338/pexels-photo-3738338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       priceRange:'Shop Now',
       category:'Remmingneer, Bablissz Pro'

@@ -7,7 +7,7 @@ const Footer=()=>{
 
     return (
      <div className="px-7 border bg-white"> 
-      <div className="mt-[3rem] py-12">
+      <div className="py-12">
   
          <h2 className="font-semibold text-gray-700">
            <span className="text-gray-500">Top Stories:</span>&nbsp;Brand Directory

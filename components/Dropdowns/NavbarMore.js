@@ -37,7 +37,7 @@ const moreMenu = [
 const NavbarMore = () => {
 
     return (
-       <div className='z-20'>
+       <div className=''>
           {moreMenu.map((item)=> (
             <div>
             <ul key={item.id}>

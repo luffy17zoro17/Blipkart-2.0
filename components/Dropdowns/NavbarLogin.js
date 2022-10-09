@@ -8,6 +8,7 @@ import SvgIcon from '@mui/material/SvgIcon';
 
 
 
+
 const Menu = [
     {
         id:1,
@@ -49,22 +50,28 @@ const Menu = [
 
 const NavbarLogin = () => {
 
+
+    
+
     return (
        
-       <div className='z-20'>
-          <span className='flex gap-9 pb-8'>
+       <div className=''>
+          <span className='flex w-[14.3rem] justify-between pb-8'>
           <h1>New Customer?</h1>
-          <h2 className='text-blue-300 cursor-pointer 
-          hover:underline underline-offset-[0.1rem]'>Sign Up</h2>
           </span>
-          <hr className='h-[0.1rem] border-black mb-[1rem]'/> 
+
+          
+
+
+          <hr className='h-[0.1rem] border-white mb-[1rem]'/> 
           {Menu.map((item)=> (
             <div>   
             <ul key={item.id}>
               <li className='hover:text-green-400 cursor-pointer'>
                  <SvgIcon className="mr-[0.4rem]" component={item.icon}/>
                   {item.name}
-                 <hr className={item.id===6 ? "hidden" :'h-[0.1rem] border-black my-[1rem]'}/> 
+                 <hr className={item.id===6 ? 
+                    "hidden" :'h-[0.1rem] border-black my-[1rem]'}/> 
               </li>
               
             </ul>

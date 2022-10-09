@@ -101,7 +101,7 @@ const Advantages = () => {
                  key={item.id}>
 
                 
-                <div className="hover:scale-[96%]
+                <div className="mb-[1.4rem] xl:mb-[0rem] hover:scale-[96%]
                   cursor-pointer">
                  <div className="w-[5rem] h-[5rem] rounded-full ml-[1rem]"> 
                  <Image 

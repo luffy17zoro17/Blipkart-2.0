@@ -80,8 +80,9 @@ const ImageSlideShow=()=> {
                     bgcolor: 'background.default',
                     }}
                 >
-                  <h1 className="pr-5 pt-3 p-4 -ml-4 bg-orange-400">
-                    <Typography>
+                  <h1 className="pr-5 pt-3 p-4 -ml-4
+                   bg-orange-400">
+                    <Typography className='font-semibold'>
                       {images[activeStep].label}
                     </Typography>
                   </h1>

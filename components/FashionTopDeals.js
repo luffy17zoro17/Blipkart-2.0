@@ -15,14 +15,14 @@ const images = [
       id:1,
       product: 'Lehenga Choli',
       imgPath:"https://images.unsplash.com/photo-1503160865267-af4660ce7bf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-      priceRange:"From ₹10,900",
+      priceRange:"From ₹14,300",
       category: 'Ensemebleey, Vastrolexuz',
     },
     { 
       id:2,
       product: 'Silk Sarees',
       imgPath:'https://images.unsplash.com/photo-1616586169180-2671c5e1cbdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1982&q=80',
-      priceRange:'From ₹13,990',
+      priceRange:'From ₹15,990',
       category: 'Katakuriee, Nalley & more',
     },
     { 
