@@ -12,6 +12,7 @@ import TopOffers from '../components/TopOffers';
 import Furniture from '../components/BestSellingFurniture';
 import TvAppliances from '../components/Tvs&Appliances';
 import GroomingBooks from '../components/GroomingBooks&more';
+import { useState } from 'react';
 
 
 
@@ -20,9 +21,26 @@ import GroomingBooks from '../components/GroomingBooks&more';
 const Home=()=> {
 
 
+  const [isHover, setIsHover] = useState(false);
+  const [isMore, setIsMore] = useState(false);
+  const [isLoginPanel, setIsLoginPanel] = useState(false);
+
+  const [IsSignupPanel,setIsSignupPanel] = useState(false);
+
+
   return (
-   <div>
-     <div><NavBar/></div>
+   <div className={(isLoginPanel || IsSignupPanel) && "fixed"}>
+      <NavBar
+            isHover={isHover}
+            setIsHover={setIsHover}
+            isMore={isMore}
+            setIsMore={setIsMore}
+            isLoginPanel={isLoginPanel}
+            IsSignupPanel={IsSignupPanel}
+            setIsLoginPanel={setIsLoginPanel}
+            setIsSignupPanel={setIsSignupPanel}
+          />
+     
      <div><Sections/></div>
      <div><ImageSlideShow/></div>
      <div><TopOffers/></div>

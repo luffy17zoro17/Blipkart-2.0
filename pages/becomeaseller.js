@@ -15,7 +15,10 @@ import ZeroCommission from "../components/Seller/ZeroCommission";
 
 
 
+
 const BecomeAseller= () => {
+
+   
 
     return (
         <div>

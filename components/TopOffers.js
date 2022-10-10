@@ -122,6 +122,10 @@ const TopOffers = () => {
       shadow bg-white p-4
       overflow-hidden mx-[1.7%]
       xl:mx-[5.9%]">
+        <div className='w-[1rem] border-4 border-white
+         h-[25rem] absolute z-40 
+         bg-white right-[1.7%] xl:right-[5.9%]'/>
+
         <div className="flex-none w-[11rem] sm:w-[15rem] 
         h-[25rem]">
          <div className='flex flex-col items-center

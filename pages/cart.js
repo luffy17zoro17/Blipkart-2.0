@@ -17,8 +17,15 @@ const Cart = () => {
              h-[4rem] flex">
              <div className="flex justify-around w-[100%]
                items-center">
-              <h1>Blipkart</h1>
-              <h2>Grocery</h2>
+              
+              <div className="flex flex-col justify-center items-center">
+              <h1 className="cursor-pointer">Blipkart
+              </h1>
+              <hr className="absolute border-4 border-blue-500
+                w-[8rem] top-[3.4rem] md:w-[10rem] lg:w-[14rem]"/>
+              </div>  
+              
+              <h2 className="cursor-pointer">Grocery</h2>
              </div> 
 
              <div className="bg-white border fixed w-[70%] mt-[4.8rem]
@@ -49,8 +56,8 @@ const Cart = () => {
             </div>
            </div> 
            <div>
-              <hr className="w-[100%] h-[0.1rem]
-                 absolute z-10 bg-gray-300 top-[40rem]"
+              <hr className="w-[100%] h-[0.04rem]
+                 absolute z-0 bg-gray-300 top-[40rem]"
               />
            </div>
            <div className="flex justify-between w-[100%] absolute top-[45rem] 
@@ -63,8 +70,10 @@ const Cart = () => {
                    © 2007-2002 Blipkart.com 
               </p>
               <p className="ml-[8rem] tracking-wide text-right flex justify-end flex-wrap tracking-wide sm:ml-[0rem]">  
-                Need help? Visit the <span className="text-blue-500 text-right flex-wrap">&nbsp;
-                Help Center</span>&nbsp;or&nbsp;<span className="text-blue-500 text-right flex-wrap">
+                Need help? Visit the <span className="text-blue-500 text-right 
+                flex-wrap cursor-pointer">&nbsp;
+                Help Center</span>&nbsp;or&nbsp;
+                <span className="text-blue-500 text-right flex-wrap cursor-pointer">
                 Contact Us</span>
               </p>  
            </div>

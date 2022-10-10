@@ -63,11 +63,11 @@ const ImageSlideShow=()=> {
   };
 
   return (
-    <Box className='mx-[1%] mt-[4.9rem] relative xl:mx-[5.6%]'>
+    <Box className='mx-[1.6%] mt-[4.9rem] relative xl:mx-[5.9%]'>
     <div className="">
       
       <div className="
-           mx-2 my-4">    
+            my-4">    
             <div className="z-10 top-0 absolute shadow-md
              shadow-black">
               <Paper

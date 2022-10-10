@@ -14,16 +14,14 @@ import SignupButton from './SignupButton';
 
 
 
-const Navbar = () => {
+const Navbar = ({isHover,setIsHover,isLoginPanel,setIsLoginPanel,IsSignupPanel,setIsSignupPanel,isMore,setIsMore}) => {
 
-  const [isHover, setIsHover] = useState(false);
-  const [isMore, setIsMore] = useState(false);
-  const [isLoginPanel, setIsLoginPanel] = useState(false);
-
-  const [IsSignupPanel,setIsSignupPanel] = useState(false);
+  
 
 
   return (
+   
+    
     <div className="h-[3.7rem] bg-blue-500 text-white shadow-md w-[100%]
       shadow-black flex items-center px-5 fixed z-50 top-0 justify-center space-x-[2rem]">
 
