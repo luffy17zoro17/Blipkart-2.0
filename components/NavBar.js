@@ -23,7 +23,7 @@ const Navbar = ({isHover,setIsHover,isLoginPanel,setIsLoginPanel,IsSignupPanel,s
    
     
     <div className="h-[3.7rem] bg-blue-500 text-white shadow-md w-[100%]
-      shadow-black flex items-center px-5 fixed z-50 top-0 justify-center space-x-[2rem]">
+      shadow-black flex items-center px-[5%] fixed z-50 top-0 justify-center space-x-[5%]">
 
 
       <span className="font-semibold text-xl

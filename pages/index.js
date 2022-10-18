@@ -50,18 +50,18 @@ const Home=()=> {
             setIsSignupPanel={setIsSignupPanel}
           />
      
-     <div><Sections/></div>
-     <div><ImageSlideShow/></div>
-     <div><TopOffers/></div>
-     <div><Electronics/></div>
-     <div><BestSellers/></div>
-     <div><FashionTopDeals/></div>
-     <div><Furniture/></div>
-     <div><TvAppliances/></div>
-     <div><GroomingBooks/></div>
+       <Sections/>
+       <ImageSlideShow/>
+       <TopOffers/>
+        <Electronics/>
+       <BestSellers/>
+       <FashionTopDeals/>
+       <Furniture/>
+       <TvAppliances/>
+       <GroomingBooks/>
      
-     <div><Footer/></div>
-     <div><FooterBottom/></div>
+       <Footer/>
+       <FooterBottom/>
    </div> 
    </> 
   );
