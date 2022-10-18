@@ -50,7 +50,8 @@ const Home=()=> {
             setIsLoginPanel={setIsLoginPanel}
             setIsSignupPanel={setIsSignupPanel}
           />
-      <div className='flex border-4 border-red-700 relative'>
+      <div className='flex border-4 border-red-700 relative
+      w-[100%]'>
        <div className='w-[100%]'>
         <Sections/>
        <ImageSlideShow/>
