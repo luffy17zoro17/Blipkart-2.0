@@ -22,6 +22,7 @@ const LoginButtonMain = ({setIsLoginPanel}) => {
                height={900}
                src="https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg"
                layout="responsive"
+               alt=""
                className='object-cover rounded-xl'
              />
              <div className='w-[4.4rem] h-[4.4rem] absolute bottom-[9.3rem] ml-[6.4rem]
@@ -32,7 +33,7 @@ const LoginButtonMain = ({setIsLoginPanel}) => {
                 className='object-cover rounded-full shadow shadow-black'
                 height={900}
                 width={900}
-
+                alt=""
              /></div>
            </div>
         </div>

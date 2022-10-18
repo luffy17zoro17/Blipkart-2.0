@@ -138,6 +138,8 @@ const FooterBottom = () => {
            src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg"
            height={60}
            width={390}
+           alt=""
+           layout="fixed"
          />
        </li>
       </ul>   

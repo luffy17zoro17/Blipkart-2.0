@@ -158,7 +158,8 @@ const TopOffers = () => {
                     src={item.imgPath} 
                     className="object-cover cursor-pointer
                     hover:object-contain hover:shadow hover:shadow-black"   
-                    layout='responsive'        
+                    layout='responsive'   
+                    alt=""     
                   />
                  </div> 
               

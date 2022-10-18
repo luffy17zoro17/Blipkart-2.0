@@ -26,7 +26,8 @@ const NavBarSeller = () => {
      <div className='flex w-[80%]
      sm:flex-wrap sm:w-[55%]'>
       <div className="absolute blur-[0.02rem] left-4 top-2 z-10 w-[2.5rem] h-[2.5rem] shadow cursor-pointer">   
-       <Link href="/"><Image
+       <Link href="/">
+            <Image
               src="https://w0.peakpx.com/wallpaper/287/416/HD-wallpaper-magick-mandala-b-galaxy-glow-initial-b-letter-b-magic-occult-orb.jpg"
               alt=""
               width={980}

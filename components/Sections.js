@@ -92,8 +92,6 @@ const Sections = () => {
           className='object-cover'
           layout="fill"
           src={item.imgPath}
-          height={900}
-          width={900}
           alt=""
         />
         

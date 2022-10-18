@@ -23,6 +23,7 @@ const EventsAndProgs = () => {
               width={60}
               height={40}
               className="object-cover rounded-md"
+              alt=""
             />
             <div className="py-1 px-4 top-[5%] right-[5%] rounded
              bg-gray-300 absolute z-10 font-semibold shadow-md cursor-pointer">Events</div>

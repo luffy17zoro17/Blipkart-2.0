@@ -89,7 +89,8 @@ const HowToSell = () => {
                      src={sell.imgPath}
                      alt=""
                      className="object-cover rounded-full"
-                     layout="fill"/>
+                     layout="fill"
+                 />
                  </div>   
                  <div className="left-[7.2rem] pl-5 w-[80%]"> 
                   <h1 className="font-medium mb-2 text-blue-400 w-[100%]">

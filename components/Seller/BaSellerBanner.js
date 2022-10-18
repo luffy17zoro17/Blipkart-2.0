@@ -61,6 +61,7 @@ const BaSellerBanner= () => {
                   priority={true}
                   layout="responsive"
                   className="object-cover rounded-full"
+                  alt=""
                  /> 
               </div> 
                  

@@ -13,6 +13,7 @@ import Furniture from '../components/BestSellingFurniture';
 import TvAppliances from '../components/Tvs&Appliances';
 import GroomingBooks from '../components/GroomingBooks&more';
 import { useState } from 'react';
+import Head from 'next/head';
 
 
 

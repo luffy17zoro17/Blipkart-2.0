@@ -38,6 +38,7 @@ const Cart = () => {
                   width={200}
                   className="object-cover rounded-xl"
                   layout="responsive"
+                  alt=""
                   src="https://images.unsplash.com/photo-1619191163420-4a7c0798b8a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
                  />
                  </div>

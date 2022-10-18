@@ -95,6 +95,7 @@ function SwipeableTextMobileStepper() {
                 height={120}
                 layout='fixed'
                 src={pic.imgPath}
+                alt=""
                />
               </div> 
               <span className=''>
