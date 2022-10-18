@@ -38,6 +38,7 @@ const Home=()=> {
     <link rel="icon" href="https://iconarchive.com/download/i54293/crountch/one-piece-jolly-roger/Luffys-flag.ico" />
    
   </Head>
+  
    <div className={(isLoginPanel || IsSignupPanel) && "fixed"}>
       <NavBar
             isHover={isHover}
@@ -49,8 +50,9 @@ const Home=()=> {
             setIsLoginPanel={setIsLoginPanel}
             setIsSignupPanel={setIsSignupPanel}
           />
-     
-       <Sections/>
+      <div className='flex'>
+       <div className=''>
+        <Sections/>
        <ImageSlideShow/>
        <TopOffers/>
         <Electronics/>
@@ -62,7 +64,9 @@ const Home=()=> {
      
        <Footer/>
        <FooterBottom/>
-   </div> 
+       </div>
+      </div>
+   </div>
    </> 
   );
 

@@ -10,7 +10,7 @@ import HelpIcon from '@mui/icons-material/Help';
 
 const FooterBottom = () => {
   return (
-   <div className="bg-gray-900 pb-4 w-[100%]"> 
+   <div className="bg-gray-900 pb-4"> 
     <div className="text-white flex 
      justify-between pl-[4rem] pr-[5rem] py-[2.4rem] text-[13px] 
      font-light">
