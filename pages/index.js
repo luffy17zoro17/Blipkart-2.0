@@ -52,7 +52,8 @@ const Home=()=> {
           />
       <div className='flex border-4 border-red-700 relative
       w-[100%]'>
-       <div className='w-[100%]'>
+       <div className='flex flex-col border-4 
+       border-green-600'>
         <Sections/>
        <ImageSlideShow/>
        <TopOffers/>
