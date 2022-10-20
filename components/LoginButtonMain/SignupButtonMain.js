@@ -12,10 +12,10 @@ const SignupButtonMain = ({setIsSignupPanel}) => {
     w-screen h-screen flex justify-center items-center'>
       <div className='flex absolute justify-center items-center z-40 w-[95%] md:w-[100%]'>
         <div className='w-[16rem] h-[30rem] bg-blue-500 p-9 rounded-l z-40'>
-          <h1 className='text-[1.7rem] sm:text-[2rem] pb-4 font-medium leading-[2.7rem]'>
+          <h1 className='text-[3vmin] pb-4 font-medium leading-[2.6rem]'>
             Looks like you're new here!
           </h1>
-          <p className="text-gray-300 text-lg">Sign up with your mobile
+          <p className="text-gray-300 text-[2vmin]">Sign up with your mobile
              number to get started<br/>
            </p>
            <div className='top-[19.4rem] absolute z-40 
@@ -28,7 +28,8 @@ const SignupButtonMain = ({setIsSignupPanel}) => {
                layout="responsive"
                className='object-cover rounded-xl'
              />
-             <div className='w-[4.4rem] h-[4.4rem] absolute bottom-[6.2rem] ml-[6.2rem]
+             <div className='w-[4.4rem] h-[4.4rem] absolute 
+             bottom-[6.2rem] ml-[6.2rem] z-20
              shadow shadow-black rounded-full 
               '>
               <Image 

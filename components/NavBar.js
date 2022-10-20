@@ -55,7 +55,7 @@ const Navbar = ({isHover,setIsHover,isLoginPanel,setIsLoginPanel,
       />
   
       
-      <div className='hidden xl:flex'>
+      <div className='hidden md:flex'>
         <Link
          href="/becomeaseller"
          as="becomeaseller"
@@ -70,7 +70,7 @@ const Navbar = ({isHover,setIsHover,isLoginPanel,setIsLoginPanel,
       <div onMouseLeave={()=>{setIsMore(false)}} onMouseOver={()=>{setIsMore(true)}} 
       className="w-[9rem] h-[2.2rem] cursor-pointer text-white
        rounded-sm flex justify-center items-center hidden 
-       md:relative lg:flex">
+       md:relative md:flex">
       <span className=''>More 
       <KeyboardArrowDownIcon className={isMore && "rotate-180"} fontSize="small"/></span>
       
