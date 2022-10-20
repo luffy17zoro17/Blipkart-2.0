@@ -14,7 +14,8 @@ const Footer=()=>{
          </h2><br/>   
          <span className="text-gray-400">
           <p className="leading-5">POPULAR SEARCHES FOR ON BLIPKART:
-            <span className="text-xs text-gray-700">&nbsp;Lorem ipsum dolor sit amet, 
+            <span className=" 
+            text-gray-700">&nbsp;Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit, sed do 
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
             enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -22,20 +23,20 @@ const Footer=()=>{
             reprehenderit in voluptate velit esse cillum dolore</span> <br/> 
 
       
-            MOBILES:<span className="text-xs text-gray-700">&nbsp;Et harum quidem rerum facilis est et expedita distinctio. 
+            MOBILES:<span className="text-gray-700">&nbsp;Et harum quidem rerum facilis est et expedita distinctio. 
                Nam libero tempore, cum soluta nobis est eligendi optio cumque 
                nihil impedit quo minus id quod maxime placeat facere possimus,
                 omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
                  autem quibusdam et aut officiis</span><br/>
          
-            CAMERA:<span className="text-xs text-gray-700">&nbsp; Nor again is there anyone who 
+            CAMERA:<span className="text-gray-700">&nbsp; Nor again is there anyone who 
               loves or pursues or desires to obtain pain of itself, because it 
               is pain, but because occasionally circumstances occur in which 
               toil and pain can procure him some great pleasure. To take a 
               trivial
               </span><br/>
 
-            LAPTOPS:<span className="text-xs text-gray-700">&nbsp;Contrary to popular belief,
+            LAPTOPS:<span className="text-gray-700">&nbsp;Contrary to popular belief,
              Lorem Ipsum is not simply random text. It has roots in a piece of 
              classical Latin literature from 45 BC, making it over 2000 years 
              old. Richard McClintock, a Latin professor at Hampden-Sydney College 
@@ -44,13 +45,13 @@ const Footer=()=>{
              cites of the word in classical literature, discovered the
              undoubtable source.</span><br/>
         
-            TVS:<span className="text-xs text-gray-700">&nbsp; It uses a dictionary of over 200
+            TVS:<span className="text-gray-700">&nbsp; It uses a dictionary of over 200
              Latin words, combined with a handful of model sentence structures, 
              to generate Lorem Ipsum which looks reasonable. The generated Lorem
              Ipsum is therefore always free from repetition, injected humour, 
              or non-characteristic words etc.</span><br/>
       
-            LARGE APPLIANCES:<span className="text-xs text-gray-700">&nbsp;  Lorem Ipsum has been 
+            LARGE APPLIANCES:<span className="text-gray-700">&nbsp;  Lorem Ipsum has been 
              the industry's standard dummy text ever since the 1500s, when an 
              unknown printer took a galley of type and scrambled it to make a 
              type specimen book. It has survived not only five centuries, but 
@@ -58,7 +59,7 @@ const Footer=()=>{
              unchanged. 
             </span><br/>
        
-            CLOTHING:<span className="text-xs text-gray-700">&nbsp; Temporibus autem quibusdam
+            CLOTHING:<span className="text-gray-700">&nbsp; Temporibus autem quibusdam
              et aut officiis debitis aut rerum necessitatibus saepe eveniet ut 
              et voluptates repudiandae sint et molestiae non recusandae. Itaque
              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
@@ -66,7 +67,7 @@ const Footer=()=>{
              asperiores repellat."
             </span><br/>
        
-            FOOTWEAR:<span className="text-xs text-gray-700">&nbsp; But in certain circumstances
+            FOOTWEAR:<span className="text-gray-700">&nbsp; But in certain circumstances
              and owing to the claims of duty or the obligations of business it 
              will frequently occur that pleasures have to be repudiated and
              annoyances accepted. The wise man therefore always holds in these
@@ -74,13 +75,13 @@ const Footer=()=>{
              secure other greater pleasures, or else he endures pains to avoid
              worse pains.</span><br/>
        
-            GROCERIES:<span className="text-xs text-gray-700">&nbsp; But I must explain to you 
+            GROCERIES:<span className="text-gray-700">&nbsp; But I must explain to you 
              how all this mistaken idea of denouncing pleasure and praising pain 
              was born and I will give you a complete account of the system, and 
              expound the actual teachings of the great explorer of the truth, 
              the master-builder of human happiness.</span><br/>
        
-            MOST SOLD OUT ON BLIPKART:<span className="text-xs text-gray-700">&nbsp;Lorem ipsum 
+            MOST SOLD OUT ON BLIPKART:<span className="text-gray-700">&nbsp;Lorem ipsum 
              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
@@ -88,13 +89,13 @@ const Footer=()=>{
              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
              officia deserunt mollit anim id est laborum.
-            </span>
+            </span><br/>
       
-            FURNITURE:<span className="text-xs text-gray-700">&nbsp; All the Lorem Ipsum generators 
+            FURNITURE:<span className="text-gray-700">&nbsp; All the Lorem Ipsum generators 
              on the Internet tend to repeat predefined chunks as necessary, 
              making this the first true generator on the Internet. </span><br/>
          
-            BGMH:<span className="text-xs text-gray-700">&nbsp;At vero eos et accusamus et iusto odio
+            BGMH:<span className="text-gray-700">&nbsp;At vero eos et accusamus et iusto odio
              dignissimos ducimus qui blanditiis praesentium voluptatum deleniti 
              atque corrupti quos dolores et quas molestias excepturi sint 
              occaecati cupiditate non provident, similique sunt in culpa qui 
@@ -104,8 +105,8 @@ const Footer=()=>{
         </div> 
         <div>
           
-          <div className="text-gray-500 text-[10px] pb-4">
-            <h1 className="font-bold py-2 text-[16px] ">
+          <div className="text-gray-500 pb-4">
+            <h1 className="font-bold py-2">
                Blipkart - shopping aint't Shopping unless you're Blipkarting
             </h1>
               Culpa dolores et magni porro et omnis voluptas sit voluptate 
@@ -119,7 +120,7 @@ const Footer=()=>{
               nostrum est aperiam dolores et fuga enim. Sit voluptatem adipisci 
               eum error modi ut modi itaque. Vel omnis necessitatibus ab dolore 
               rerum sed nihil vero ut quasi harum et cupiditate velit ut velit asperiores.
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Blipkart Plus</h1> 
+            <h1 className="font-bold py-2 pt-3">Blipkart Plus</h1> 
               Aut quia consequatur in magnam voluptatibus qui laborum praesentium ut 
               galisum molestiae et illo laudantium cum sequi excepturi! Ad galisum accusantium
               illum atque vel illum. Non quia iure id consequatur saepe At saepe ducimus ut aperiam
@@ -130,7 +131,7 @@ const Footer=()=>{
               et cumque voluptatem vel sunt alias. Cum repudiandae inventore hic voluptatem tempore est 
               neque velit cum optio perspiciatis.
     
-            <h1 className="font-bold py-2 pt-3 text-[15px]">No Cost EMI</h1>
+            <h1 className="font-bold py-2 pt-3">No Cost EMI</h1>
             Non animi ducimus nam error totam sed magnam magni? Id dolor facilis nam corrupti autem 
             non optio quis. Ex aliquid ullam ea eveniet voluptatum et porro quasi ut error recusandae ut 
             ratione dolores hic velit ipsam hic vero aspernatur. Ex consequuntur excepturi ea alias dolor
@@ -140,14 +141,14 @@ const Footer=()=>{
             officia veniam ut eaque quis. Aut porro ipsum non voluptates rem voluptatum sunt ea voluptatum 
             distinctio
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">EMI on Debit Cards</h1>
+            <h1 className="font-bold py-2 pt-3">EMI on Debit Cards</h1>
             Quo corporis ipsa et quae velit sed consequuntur numquam eos omnis reiciendis At illum libero! 
             Sit voluptatum nobis ad aspernatur animi non totam dolorem.
             Qui iusto tempore et labore vero aut consequatur ipsam quo molestiae reprehenderit eum asperiores
             quibusdam qui modi odio. Et vero possimus qui repellat pariatur est ipsa minima et fuga quaerat 
             qui veniam officiis aut minima omnis.  
         
-            <h1 className="font-bold py-2 pt-3 text-[17px]">Mobile Exchange Offers</h1>
+            <h1 className="font-bold py-2 pt-3">Mobile Exchange Offers</h1>
             
             Ut minus galisum est iusto voluptatem nam totam accusamus qui esse repellat sit nulla expedita 
             sed consectetur quos. Est rerum voluptas a molestiae suscipit ut
@@ -155,8 +156,8 @@ const Footer=()=>{
             possimus qui quaerat molestiae sapiente voluptas aut galisum illo 
             vel perferendis iste. Ut eius cupiditate aut molestiae officia in 
             dolore voluptatem qui accusamus velit ex tempore enim.      
-            <h1 className="font-bold pt-3 text-[15px]">What Can You Buy From Blipkart?</h1>
-            <h1 className="font-bold pb-2 text-[15px]">Mobile Phones</h1>
+            <h1 className="font-bold pt-3">What Can You Buy From Blipkart?</h1>
+            <h1 className="font-bold pb-2">Mobile Phones</h1>
     
             Aut dolore vero ut totam consequuntur qui distinctio esse eum autem perspiciatis aut quaerat 
             harum. Et fugiat sunt eos nemo fugiat aut quasi sint. Hic ipsum quasi ut consequatur repellendus 
@@ -165,7 +166,7 @@ const Footer=()=>{
             Aut asperiores distinctio aut veritatis quaerat et quae corporis quo molestias voluptatibus et sint 
             sunt qui provident voluptatem non aperiam error. 
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Electronic Devices and Accessories</h1>
+            <h1 className="font-bold py-2 pt-3">Electronic Devices and Accessories</h1>
             
             Ea dignissimos suscipit aut excepturi voluptas vel enim facilis sit quos voluptates et dolore 
             provident aut eaque repudiandae. Ea quia distinctio qui nemo 
@@ -173,7 +174,7 @@ const Footer=()=>{
             architecto optio et consequatur nesciunt in deleniti accusantium 
             33 deserunt consequatur aut laudantium obcaecati est minus sunt?
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Large Appliances</h1>
+            <h1 className="font-bold py-2 pt-3">Large Appliances</h1>
             
             Hic perspiciatis exercitationem est illum perferendis est ipsa dolores. Eos iure omnis et 
             explicabo esse ea deleniti temporibus. Ea itaque eius ex molestiae
@@ -181,7 +182,7 @@ const Footer=()=>{
             repellendus vero. Qui sunt voluptatem et asperiores eligendi ea cumque sunt et dolore 
             atque qui cumque eveniet.
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Small Home Appliances</h1>
+            <h1 className="font-bold py-2 pt-3">Small Home Appliances</h1>
           
             Ea blanditiis officiis qui sunt dolorem qui internos accusantium qui nobis consectetur aut
             quas deserunt. Et numquam natus est alias eligendi sed obcaecati 
@@ -189,7 +190,7 @@ const Footer=()=>{
             vitae dolorem est suscipit molestias ad voluptatem debitis et 
             minima sint.
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Lifestyle</h1>
+            <h1 className="font-bold py-2 pt-3">Lifestyle</h1>
             
             Sed rerum maiores sed molestiae laudantium ab sint itaque ut reprehenderit omnis hic
             aliquam soluta et velit corporis. Eum alias autem cum maxime animi
@@ -200,7 +201,7 @@ const Footer=()=>{
             eum voluptas ipsum? Aut unde impedit est distinctio rerum sed 
             commodi exercitationem ut amet eius.
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Home and Furniture</h1>
+            <h1 className="font-bold py-2 pt-3">Home and Furniture</h1>
             
             Ea explicabo nobis et voluptas rerum ea nesciunt harum non similique possimus aut 
             harum enim. Aut totam recusandae quo perspiciatis odio nam labore 
@@ -209,7 +210,7 @@ const Footer=()=>{
             officia nesciunt aut rerum unde. Qui omnis esse rem accusamus illum non impedit
             ipsa aut nostrum quidem sit sint numquam!
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Baby and Kids</h1>
+            <h1 className="font-bold py-2 pt-3">Baby and Kids</h1>
             
             Qui quisquam vero At internos deleniti 33 quidem incidunt nam tempora expedita.
             Est quasi porro hic modi voluptatem et enim enim et atque numquam.
@@ -219,7 +220,7 @@ const Footer=()=>{
             qui alias cumque et perspiciatis cumque. Ad enim omnis qui omnis 
             soluta quo mollitia libero in omnis pariatur.
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Books, Sports and Games</h1>
+            <h1 className="font-bold py-2 pt-3">Books, Sports and Games</h1>
             
             Et consectetur earum et inventore repellendus cum quis fuga sed officia debitis
             vel magnam perspiciatis ad modi aliquam. Ad consectetur iste non 
@@ -228,7 +229,7 @@ const Footer=()=>{
             deserunt non explicabo exercitationem qui dolorem minus est 
             dolores temporibus qui error quia. 
             
-            <h1 className="font-bold py-2 pt-3 text-[15px]">Grocery/Supermart</h1>
+            <h1 className="font-bold py-2 pt-3">Grocery/Supermart</h1>
             
             Voluptatum dolorum est totam architecto non asperiores adipisci non consequatur
             voluptas et officiis obcaecati. Ea placeat deserunt non facere 

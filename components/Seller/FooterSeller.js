@@ -6,10 +6,10 @@ const Footer = () => {
     return (
       <div className="w-[100%]
        bg-gray-200 flex flex-col items-center justify-center
-       text-2xl text-center h-[47%] px-[5%] pb-8 lg:px-[10%]">
+       text-center h-[47%] px-[5%] pb-8 lg:px-[10%]">
         
-        <h1 className="py-8">SELL ON BLIPKART</h1>
-        <p className="text-[1rem] text-start leading-[1.7rem]">
+        <h1 className="py-8 text-[3vmin]">SELL ON BLIPKART</h1>
+        <p className="text-start leading-[1.7rem]">
             Blipkart Marketplace is India’s leading 
            platform for selling online. 
            Be it a manufacturer, vendor or supplier, simply sell your products 

@@ -21,8 +21,15 @@ const BecomeAseller= () => {
    
 
     return (
-        <div>
-            <NavBarSeller/>
+        <>
+        <div className="sticky top-0 left-0 z-30">
+          <NavBarSeller/>
+        </div> 
+        
+        <div className="text-[2.2vmin] flex flex-col w-[100%]">
+           
+       
+        
             <BaSellerBanner/>
             <Quotes/>
             <Advantages/>
@@ -34,7 +41,10 @@ const BecomeAseller= () => {
             <EventsAndProgs/>
             <FooterSeller/>
             <FooterSellerBottom/>
-        </div>    
+         
+        </div>   
+        </>
+       
       
     );
 }

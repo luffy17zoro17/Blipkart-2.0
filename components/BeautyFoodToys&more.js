@@ -199,6 +199,7 @@ const Electronics = () => {
                     hover:object-contain hover:shadow hover:shadow-black"   
                     layout='responsive'   
                     alt=""     
+                    priority={true}
                   />
                  </div> 
               

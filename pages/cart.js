@@ -10,7 +10,7 @@ const Cart = () => {
 
     return (
         
-        <div>
+        <div className="text-[2vmin]">
             <NavbarCart/>
            <div className="flex flex-col items-center justify-center">
             <div className="bg-white border fixed w-[70%] top-[11%]
@@ -22,7 +22,7 @@ const Cart = () => {
               <h1 className="cursor-pointer">Blipkart
               </h1>
               <hr className="absolute border-4 border-blue-500
-                w-[8rem] top-[3.4rem] md:w-[10rem] lg:w-[14rem]"/>
+                w-[8rem] top-[3.4rem] w-[18vmin]"/>
               </div>  
               
               <h2 className="cursor-pointer">Grocery</h2>
@@ -42,11 +42,11 @@ const Cart = () => {
                   src="https://images.unsplash.com/photo-1619191163420-4a7c0798b8a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
                  />
                  </div>
-                 <h3 className="text-lg">Missing Cart Items?</h3>
-                 <p className="text-xs">
+                 <h3 className="text-lg text-[3vmin]">Missing Cart Items?</h3>
+                 <p className="text-xs text-[2vmin]">
                     Login to see the items you added previously
                  </p>
-                 <div className="font-light px-[5rem] py-[0.5rem]
+                 <div className="font-light px-[5rem] py-[0.5rem] text-[2vmin]
                    bg-orange-300 rounded text-red-800 shadow-xl cursor-pointer">
                   <Link href="/login">
                     <a className="">Login</a>
@@ -57,12 +57,13 @@ const Cart = () => {
             </div>
            </div> 
            <div>
+          
               <hr className="w-[100%] h-[0.04rem]
                  absolute z-0 bg-gray-300 top-[40rem]"
               />
            </div>
-           <div className="flex justify-between w-[100%] absolute top-[45rem] 
-             text-gray-600 text-sm px-[6%]">
+           <div className="flex justify-between w-[100%] absolute z-20 top-[11rem] 
+             text-gray-600 px-[6%]">
               <p className="text-left flex flex-wrap justify-start
                 tracking-wide">
                 Policies: Returns Policy | Terms of use |

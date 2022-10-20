@@ -8,7 +8,7 @@ const WhyShopsy = () => {
     return (
        <div className="py-5 bg-white lg:hidden">
         <div className="text-center flex flex-col items-center">
-         <h1 className="text-2xl font-medium">WHY SHOPPEYY?</h1>
+         <h1 className="text-2xl text-[3vmin] font-medium">WHY SHOPPEYY?</h1>
          <hr className="border bg-blue-500 my-3 h-[0.3rem] w-[8rem]"/>
          <h3 className="text-sm pb-3 font-medium text-gray-700">LowestCostOfDoingBusiness</h3>
         </div> 

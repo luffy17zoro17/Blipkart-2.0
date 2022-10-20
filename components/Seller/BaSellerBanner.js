@@ -1,5 +1,5 @@
 
-import NavBarSeller from "../NavBarSeller";
+
 import CalculateIcon from '@mui/icons-material/Calculate';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import GroupsIcon from '@mui/icons-material/Groups';
@@ -14,10 +14,11 @@ const BaSellerBanner= () => {
 
     return (
         <>
-            <NavBarSeller/>
-            <div className="relative top-[6rem] lg:top-[4rem]">
-            <div className="overflow-hidden static top-[6rem]
-             p-[5%] bg-gradient-to-t from-red-500 to-purple-600 flex lg:top-[4rem]">
+            
+         
+            <div className="relative mt-[7rem]">
+            <div className="overflow-hidden static
+             p-[5%] bg-gradient-to-t from-red-500 to-purple-600 flex">
 
             
               <div>
@@ -122,6 +123,7 @@ const BaSellerBanner= () => {
               </div>  
             </div>
             </div>
+        
             
         </>
     );

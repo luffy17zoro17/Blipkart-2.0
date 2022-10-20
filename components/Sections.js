@@ -76,27 +76,29 @@ const Sections = () => {
   return (
 
     
-    
-    <div className="w-full px-5 relative flex z-10 top-[3.4rem]
-     py-[2rem] bg-white items-center justify-evenly gap-[4rem] 
-     text-center flex-wrap pb-[3rem]">
+    <div className='flex z-[-10] mt-[1.9rem]'>
+    <div className="justify-center
+      py-[1.5rem] w-full
+      bg-white flex flex-wrap
+     text-center">
       {categories.map((item)=>(
-        <div key={item.id}>
-
-       
+        <div key={item.id} className="border-4 my-[1.5%] mx-[1.5%]">
         
-       <div className={`shadow shadow-black border-4 text-center h-[5rem]
-          flex flex-col justify-center items-center relative
-          w-[5rem] cursor-pointer hover:border-red-400`}>
+       <div className={`shadow shadow-black border-4
+          flex flex-col items-center
+          cursor-pointer hover:border-red-400`}>
+        <div className='w-[11vmin] h-[11vmin]'>    
         <Image
           className='object-cover'
-          layout="fill"
+          height={1100}
+          width={1100}
+          layout="intrinsic"
           src={item.imgPath}
           alt=""
         />
-        
-        <div className='absolute flex justify-center mt-[8rem]
-         cursor-pointer w-[16rem]'>
+        </div>
+        <div className='w-[100%]
+         cursor-pointer text-[0.9rem]'>
         {item.name}
         </div>
       
@@ -105,6 +107,7 @@ const Sections = () => {
         
       ))}
     
+    </div>
     </div>
        
   );

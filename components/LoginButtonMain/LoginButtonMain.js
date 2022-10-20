@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const LoginButtonMain = ({setIsLoginPanel}) => {
   return (
-    <div className='fixed left-0 top-0 
+    <div className='fixed left-0 top-0
     w-screen h-screen flex justify-center items-center'>
       <div className='flex absolute justify-center items-center z-40
        w-[95%] md:w-[100%]'>

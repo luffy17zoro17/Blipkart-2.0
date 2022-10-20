@@ -10,12 +10,12 @@ import HelpIcon from '@mui/icons-material/Help';
 
 const FooterBottom = () => {
   return (
-   <div className="bg-gray-900 pb-4"> 
-    <div className="text-white flex 
-     justify-between pl-[4rem] pr-[5rem] py-[2.4rem] text-[13px] 
+
+   <div className="bg-gray-900 py-[6vmin] overflow-x-hidden"> 
+    <div className="text-white flex justify-center
+     px-[5%] py-2 flex space-x-[7%]
      font-light">
-     <div className="flex text-xs gap-[2.8rem] sm:gap-[7rem] sm:text-[13px]
-       md:gap-[10rem]"> 
+  
        <div>
          <h1 className="pb-2 text-gray-400">ABOUT</h1>
          <ul className='leading-6'>   
@@ -57,9 +57,8 @@ const FooterBottom = () => {
             <li>Youtube</li>
           </ul>
        </div> 
-     </div>  
-     <div className="flex space-x-[5rem]"> 
-      <div className="flex">
+    
+   
        <div>
           <hr className="h-[13.5rem] w-[0.03rem] mt-[0.2rem] mx-5 bg-gray-500"/>
        </div>
@@ -72,7 +71,6 @@ const FooterBottom = () => {
             <li>India, 2342443</li>  
           </ul>
        </div> 
-      </div> 
        <div>
           <h1 className="pb-2 text-gray-400">Registered Office Address:</h1>
           <ul>
@@ -89,16 +87,16 @@ const FooterBottom = () => {
             </li> 
           </ul>
        </div> 
-     </div> 
+    
     </div>
     <div className="pt-2 pb-[0.5rem]">
       <hr className="h-[0.01rem] w-[100%] bg-gray-500"/>
     </div> 
-
     
-      <ul className='text-sm text-white flex flex-col space-y-2
+    
+      <ul className='text-white flex flex-col space-y-2
         items-center justify-evenly pt-4
-        xl:space-y-0 xl:text-[1rem] xl:flex-row'> 
+        xl:space-y-0 xl:flex-row'> 
        <li className="">
          <WorkIcon 
             color="secondary" 
@@ -139,11 +137,12 @@ const FooterBottom = () => {
            height={60}
            width={390}
            alt=""
-           layout="fixed"
+           layout="intrinsic"
          />
        </li>
       </ul>   
    </div>  
+  
   );
 }
 

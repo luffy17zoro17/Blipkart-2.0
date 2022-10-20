@@ -20,7 +20,7 @@ const GrowFaster = () => {
         <div className="relative">
           <div className="flex flex-col justify-center items-center absolute
           w-[100%] z-10 top-[6%]">  
-           <h1 className="text-2xl font-medium">
+           <h1 className="text-2xl text-[3.6vmin] font-medium">
             GROW FASTER WITH BLIPKART
            </h1>
            <h3 className="text-blue-500 font-medium text-sm py-2">
@@ -37,7 +37,7 @@ const GrowFaster = () => {
           </div> 
           <div className="flex items-center justify-around absolute w-[100%] z-10 bottom-5">
             <div className="text-center w-[39.1%] pl-[1.7%]">
-              <h2 className="font-bold italic text-[3.4vw] text-orange-700">NITROUZ</h2>
+              <h2 className="font-bold italic text-[3.4vmin] text-orange-700">NITROUZ</h2>
               <p className="text-[1.4vw] text-purple-900">
                 A program designed to accelerate your Blipkart business
               </p>

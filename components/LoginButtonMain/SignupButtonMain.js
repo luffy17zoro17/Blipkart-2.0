@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const SignupButtonMain = ({setIsSignupPanel}) => {
   return (
-    <div className='fixed left-0 top-0 
+    <div className='fixed left-0 top-0 z-40
     w-screen h-screen flex justify-center items-center'>
       <div className='flex absolute justify-center items-center z-40 w-[95%] md:w-[100%]'>
         <div className='w-[16rem] h-[30rem] bg-blue-500 p-9 rounded-l z-40'>

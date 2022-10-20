@@ -10,13 +10,13 @@ const EventsAndProgs = () => {
     return (
      <div  className="bg-white pb-[8rem] shadow">
         <div className="flex flex-col justify-center items-center">
-         <h1 className="py-8 text-2xl">EVENTS AND PROGRAMS</h1>
+         <h1 className="py-8 text-xl text-[3vmin]">EVENTS AND PROGRAMS</h1>
          <hr className="h-[0.1rem] w-[27rem] mb-7 lg:hidden"/>
         </div>  
         
         <div className="lg:flex lg:w-[100%] lg:justify-around lg:px-[5%]">
         <div className="ml-7 lg:ml-0 xl:scale-[120%] lg:pt-2">
-            <div className="relative w-[17rem] h-[11.7rem]">
+            <div className="relative w-[33vmin] h-[33vmin]">
             <Image
               src="https://images.unsplash.com/photo-1468234560893-89c00b6385c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1936&q=80"
               layout="responsive"
@@ -31,7 +31,7 @@ const EventsAndProgs = () => {
             justify-center w-[100%] top-[26%] italic font-bold
             text-pink-700
             ">SELLER<br/>CONCLAVE
-            <div className="absolute blur-[0.02rem] left-4 z-10 w-[4rem] h-[4rem]">   
+            <div className="absolute blur-[0.02rem] left-4 z-10 w-[4vmin] h-[4vmin]">   
             <Image
               src="https://w0.peakpx.com/wallpaper/287/416/HD-wallpaper-magick-mandala-b-galaxy-glow-initial-b-letter-b-magic-occult-orb.jpg"
               alt=""
@@ -42,20 +42,21 @@ const EventsAndProgs = () => {
             />
             </div>
             </h1>
-            </div>     
-            <h2 className="pt-3 pb-1 font-medium">
+            </div> 
+            <div className="mt-[-9vmin]">    
+            <h2 className="pb-1 font-medium">
                 Seller Events
             </h2>
             <p className="font-light text-sm w-[107%]">Blipkart Admin | 13th Aug, 2022 | 5 min read</p>
-        
+            </div>
         </div>
         <div className="flex justify-center pt-5">
         <hr className="h-[0.1rem] w-[27rem] mb-7 lg:hidden"/>
         </div>  
         
         <div className="ml-7 lg:ml-0 lg:flex lg:flex-col lg:items-center">
-          <div className="relative w-[15rem] h-[11.5rem] rounded 
-           bg-gradient-to-r from-blue-500 to-blue-800 xl:w-[130%] xl:scale-[110%]">
+          <div className="relative w-[29vmin] h-[18vmin] rounded 
+           bg-gradient-to-r from-blue-500 to-blue-800 text-[1.5vmin]">
             <div className="py-1 px-4 border top-[5.7%] right-[6%] rounded
              bg-gray-300 absolute z-10 font-semibold shadow-md cursor-pointer">Webinars</div>
             <h1 className="absolute z-10 flex flex-col items-end pr-9
@@ -95,20 +96,20 @@ const EventsAndProgs = () => {
         </div>  
         
         <div className="ml-7 bg-gradient-to-r from-blue-400 to-blue-200
-              w-[17rem] h-[11.5rem] rounded lg:ml-0 xl:scale-[120%]">
-            <div className="relative w-[17rem] h-[11.7rem]">
+              w-[36vmin] h-[19vmin] text-[1.3vmin] rounded lg:ml-0 xl:scale-[120%]">
+            <div className="relative w-[17vmin] h-[11.7vmin]">
         
-            <div className="py-1 px-4 top-[5%] right-[5%] rounded
+            <div className="py-1 px-[4vmin] top-[5%] left-[2vmin] rounded
              bg-gray-300 absolute z-10 font-semibold shadow-md cursor-pointer">Blipkart Powerful</div>
             
-            <div className="absolute z-10 flex flex-col items-start
-            left-[3.2rem]
-            justify-center w-[70%] top-[26%] italic font-bold
+            <div className="absolute z-10 flex flex-col items-end
+            left-[18vmin]
+            justify-center w-[70%] top-[12vmin] italic font-bold
             text-pink-700 font-semibold
             ">BLIPKART<br/>POWERFUL
             
             <div className="absolute blur-[0.02rem] z-10 
-             w-[4rem] h-[4rem] right-5">   
+             w-[4vw] h-[4vw] right-5">   
             <Image
               src="https://w0.peakpx.com/wallpaper/287/416/HD-wallpaper-magick-mandala-b-galaxy-glow-initial-b-letter-b-magic-occult-orb.jpg"
               alt=""
@@ -120,16 +121,16 @@ const EventsAndProgs = () => {
             </div>
             
             </div>
-             <p className="top-[7rem] absolute text-yellow-300 w-[100%]
-              text-center">
+             <p className="top-[6vmin] absolute text-yellow-300 w-[100%]
+              text-center pl-[1vmin]">
                 Touching lives with business! <br/>
                 <span className="font-semibold text-white">#EasyToGrow</span>
              </p>
             </div>     
-            <h2 className="pt-3 pb-1 font-medium lg:text-right">
+            <h2 className="pt-[11vmin] pb-1 text-[2vmin] font-medium lg:text-right">
                 Blipkart Powerful
             </h2>
-            <p className="font-light text-sm w-[107%]">
+            <p className="font-light text-sm w-[100%] lg:text-right">
                Blipkart Admin | 16th Mar, 2022 | 5 min read
             </p>
         

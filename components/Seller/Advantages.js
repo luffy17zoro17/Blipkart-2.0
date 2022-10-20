@@ -50,7 +50,7 @@ const Advantages = () => {
       <div className="z-10 w-[100%] md:mt-[6.2rem] lg:mt-[4.3rem]">
       <div className="bg-white shadow-3xl shadow-black">
         <div className="flex justify-center text-center mt-[1%] w-[100%]">
-            <div className="flex justify-evenly font-medium text-xl p-[4%] gap-11">
+            <div className="flex justify-evenly font-medium text-xl text-[3vmin] p-[4%] gap-11">
               <h1 className="hidden lg:flex lg:cursor-pointer">WHY SELL ONLINE?</h1>
               <h2 className="space-y-[1rem] pt-[2.8rem] text-center lg:pt-[0rem]">
                 <span className="">WHY BLIPKART?</span>
@@ -63,7 +63,7 @@ const Advantages = () => {
         </div>
         <div className="flex relative justify-around flex-wrap w-[100%] flex-col md:flex-row">
            <div className="flex flex-col justify-start items-center">
-            <h1 className="italic font-medium text-lg w-[100%] bg-white
+            <h1 className="italic font-medium text-lg text-[3vmin] w-[100%] bg-white
              text-center py-[2rem] md:pl-[3.6rem] lg:[4rem] md:w-[23rem]">
               #ChildsPlay
             </h1>

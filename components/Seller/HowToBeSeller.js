@@ -40,7 +40,7 @@ const HowToSell = () => {
       <div className="lg:hidden">
        <div className="bg-white shadow">
         <div className="flex justify-center text-center w-[100%]">
-            <div className="flex justify-evenly font-medium text-2xl p-[4%]">
+            <div className="flex justify-evenly font-medium text-2xl text-[3vmin] p-[4%]">
               <h1 className="hidden">WHY SELL ONLINE</h1>
               <h2 className="space-y-[1rem] pt-[2.8rem] text-center flex flex-col
                items-center">

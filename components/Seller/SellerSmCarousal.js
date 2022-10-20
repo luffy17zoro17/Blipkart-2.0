@@ -61,8 +61,9 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <div className='static bg-yellow-300 h-[17rem] mt-[6rem]'>
-    <Box sx={{ width: 800, flexGrow: 1 }}>
+    <div className='flex flex-col w-[100%] 
+    bg-yellow-300 h-[17rem] mt-[6rem]'>
+    <Box sx={{ width: "100%", flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -74,33 +75,34 @@ function SwipeableTextMobileStepper() {
           bgcolor: 'background.default',
         }}
       >
-        <Typography>{CarousalImages[activeStep].label}</Typography>
+        <Typography className='bg-orange-400 px-[2vmin] rounded-3xl'>
+          {CarousalImages[activeStep].label}</Typography>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
-        className='flex flex-col justify-center items-center absolute z-10
+        className='flex flex-col justify-center items-center z-40
          overflow-hidden w-[100%] h-[22%] mt-[2.9rem] mb-[7rem] sm:mt-[3rem]'>
         {CarousalImages.map((pic) => (
           <div className="flex justify-around h-[18rem] pt-[4rem]" key={pic.id}>
             {Math.abs(activeStep - pic.id) <= 2 ? (
                      
-             <div className='flex w-[20rem] h-[12rem]'> 
-              <div className='mr-[1rem]'>
+             <div className='flex flex-col px-[15%]'> 
+              <div className='w-[20vmin] h-[12vmin]'>
                <Image
                 className="object-cover rounded"
-                width={100}
-                height={120}
-                layout='fixed'
+                width={1100}
+                height={1120}
+                layout='responsive'
                 src={pic.imgPath}
                 alt=""
                />
               </div> 
               <span className=''>
-               <p className="italic font-light text-sm">{pic.quote}</p>
-               <h1 className='font-semibold fixed top-[10rem] flex
+               <p className="italic font-light pl-[22vmin] text-sm">{pic.quote}</p>
+               <h1 className='font-semibold fixed top-[10rem] pt-[2vmin]
                 w-[18%]'>
                 {pic.name}
                </h1>

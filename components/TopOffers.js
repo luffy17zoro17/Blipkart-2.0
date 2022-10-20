@@ -123,14 +123,14 @@ const TopOffers = () => {
       overflow-hidden mx-[1.7%]
       xl:mx-[5.9%]">
         <div className='w-[1rem] border-4 border-white
-         h-[25rem] absolute z-40 
+         h-[25rem] absolute z-10 
          bg-white right-[1.7%] xl:right-[5.9%]'/>
 
         <div className="flex-none w-[11rem] sm:w-[15rem] 
         h-[25rem]">
          <div className='flex flex-col items-center
           justify-around h-[100%] sm:justify-center'>
-          <h1 className='text-3xl pb-7'>Top Offers</h1>
+          <h1 className='text-[1.4rem] pb-7'>Top Offers</h1>
           <div className="border bg-blue-600 text-white 
            py-3 px-6 text-xs font-semibold rounded shadow-md">
             VIEW ALL
@@ -163,7 +163,7 @@ const TopOffers = () => {
                   />
                  </div> 
               
-                 <div className='w-[15rem] py-3 space-y-2'>
+                 <div className='w-[15rem] py-3 space-y-2 text-[0.9rem]'>
                      <h1 className='font-semibold'>{item.product}</h1>
               
                      <h2 className='text-sm text-green-700'>{item.priceRange}</h2>

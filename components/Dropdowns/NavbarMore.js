@@ -34,9 +34,12 @@ const moreMenu = [
 
 
 
-const NavbarMore = () => {
+const NavbarMore = ({isMore}) => {
 
     return (
+
+        <div>
+       {isMore ? (
        <div className=''>
           {moreMenu.map((item)=> (
             <div>
@@ -52,6 +55,8 @@ const NavbarMore = () => {
             </div>
           ))}
           
+       </div>
+       ) : (<div></div>)}
        </div>
     );
 }

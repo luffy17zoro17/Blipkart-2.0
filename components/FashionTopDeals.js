@@ -175,7 +175,7 @@ const Electronics = () => {
                   />
                  </div> 
               
-                 <div className='w-[15rem] py-3 space-y-2'>
+                 <div className='w-[15rem] text-[0.9rem] py-3 space-y-2'>
                      <h1 className='font-semibold'>{item.product}</h1>
               
                      <h2 className='text-sm text-green-700'>{item.priceRange}</h2>

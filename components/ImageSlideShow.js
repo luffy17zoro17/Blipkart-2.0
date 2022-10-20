@@ -63,14 +63,14 @@ const ImageSlideShow=()=> {
   };
 
   return (
-    <Box className='mx-[1.6%] mt-[4.9rem] relative xl:mx-[5.9%]'>
+    <Box className='mx-[1.6%] mt-[2rem] relative xl:mx-[5.9%]'>
     <div className="">
       
-      <div className="
-            my-4">    
-            <div className="z-10 top-0 absolute shadow-md
-             shadow-black">
+      <div className="flex my-4">    
+            <div className="z-10 top-0 absolute shadow shadow-md
+             shadow-black rounded-xl">
               <Paper
+                    className='rounded-xl'
                     square
                     elevation={0}
                     sx={{
@@ -81,8 +81,8 @@ const ImageSlideShow=()=> {
                     }}
                 >
                   <h1 className="pr-5 pt-3 p-4 -ml-4
-                   bg-orange-400">
-                    <Typography className='font-semibold'>
+                   bg-orange-400 rounded-xl shadow-md shadow-black">
+                    <Typography className='text-[1.8vw] font-bold'>
                       {images[activeStep].label}
                     </Typography>
                   </h1>
@@ -90,37 +90,41 @@ const ImageSlideShow=()=> {
             </div>
 
            
-            <div className="w-[100%] flex justify-center bottom-0 absolute z-10">
+            <div className='w-[100%] border-4 rounded-xl 
+            border-black z-0 shadow shadow-black'>
+              <div className='flex justify-center flex-col items-center'>
               <MobileStepper
                         steps={maxSteps}
-                        position="static"
-                        className='bg-yellow-300 rounded-t-xl border-4 border-black bottom-0'
+                        position=""
+                        className='bg-yellow-300 bottom-0
+                        z-40 absolute rounded-t-xl border-4
+                        border-black flex justify-center'
                         activeStep={activeStep}
                         nextButton={  
                             
-                      <div className="">    
-                        <Button className="absolute right-[7%] mt-[-9rem] 
-                        shadow-md shadow-black
+                       
+                        <Button className="absolute right-[-30vmin]
+                        shadow-md shadow-black top-[-6rem]
                         rounded-tr-lg hover:bg-pink-300 hover:text-green-300
                         rounded-br-lg bg-pink-500 border-4
-                        bg-gradient-to-b from-yellow-300" size="large" onClick={handleNext}> 
+                        bg-gradient-to-b from-yellow-300" size="" onClick={handleNext}> 
                             {theme.direction === 'rtl' ? (
                             <KeyboardArrowLeft />
                             ) : (
                             <KeyboardArrowRight />
                             )}
                         </Button> 
-                      </div>  
+                    
                     
                         }
                         backButton={ 
                       
-                      <div className="">    
-                        <Button className="absolute left-[7%] mt-[-9rem]
-                        shadow-md shadow-black
+                      
+                        <Button className="absolute z-30 left-[-30vmin]
+                        shadow-md shadow-black top-[-6rem]
                         rounded-tl-lg hover:bg-pink-300 hover:text-green-300
                         rounded-bl-lg bg-pink-500 border-4 
-                        bg-gradient-to-b from-yellow-300" size="large" onClick={handleBack}>
+                        bg-gradient-to-b from-yellow-300" size="" onClick={handleBack}>
                             {theme.direction === 'rtl' ? (
                             <KeyboardArrowRight />
                             ) : (
@@ -128,14 +132,15 @@ const ImageSlideShow=()=> {
                             )}
                           
                         </Button>
-                      </div>                   
+                                     
                         }
               />
-            </div>
+              </div>
+            
           
 
-            <div className="z-[-20]">
             <AutoPlaySwipeableViews
+                className=''
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
                 onChangeIndex={handleStepChange}
@@ -145,15 +150,19 @@ const ImageSlideShow=()=> {
                 <div key={step.label}>
                     {Math.abs(activeStep - index) <= 2 ? ( 
                        
-                        <div className="relative 
-                        h-[19rem]">
+                        <div className="flex 
+                        h-[12rem]">
+                         
                         <Image
-                           layout="fill"
-                            className='object-cover'               
+                            layout="fixed"
+                            height={190}
+                            width={1900}
+                            className='object-cover rounded-xl shadow-xl shadow-black'               
                             component="Image"
                             src={step.imgPath}
                             alt={step.label}
                         />
+                       
                         </div>
                        
                     ) : null}
